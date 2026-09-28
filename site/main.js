@@ -1,7 +1,7 @@
 const menuButton = document.querySelector('.menu-button');
 const nav = document.querySelector('.nav-links');
 const dialog = document.querySelector('#waitlist-dialog');
-const form = document.querySelector('#waitlist-form');
+const forms = document.querySelectorAll('#waitlist-form, #waitlist-form-inline');
 const endpoint = document.querySelector('meta[name="previewlog-signup-endpoint"]')?.content.trim();
 
 menuButton?.addEventListener('click', () => {
@@ -25,7 +25,7 @@ document.querySelectorAll('.js-open-waitlist').forEach((button) => {
 
 document.querySelector('.dialog-close')?.addEventListener('click', () => dialog?.close());
 
-form?.addEventListener('submit', async (event) => {
+forms.forEach((form) => form.addEventListener('submit', async (event) => {
   event.preventDefault();
   const status = form.querySelector('.form-status');
   const submit = form.querySelector('button[type="submit"]');
@@ -51,4 +51,4 @@ form?.addEventListener('submit', async (event) => {
   } finally {
     submit.disabled = false;
   }
-});
+}));
