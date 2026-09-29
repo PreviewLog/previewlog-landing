@@ -315,7 +315,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   box-shadow: 0 12px 30px rgba(25, 31, 40, 0.1);
   font-size: 10px;
 }
-.floating-note small { display: block; margin-top: 3px; color: var(--color-text-tertiary); font-size: 8px; }
+.floating-note small { display: block; margin-top: 3px; color: var(--color-text-tertiary); font-size: 10px; }
 .note-one { top: 31%; left: -36px; }
 .note-two { right: -18px; bottom: 5%; }
 .note-icon {

@@ -89,3 +89,27 @@ waitlistForm?.addEventListener('submit', async (event) => {
     }
   }
 });
+
+const koreanLabels = {
+  'LOCAL-FIRST VIDEO REVIEW': '로컬 영상 검토',
+  'FOR EDITORS & CREATORS': '편집 전 촬영본 정리',
+  'NO UPLOAD REQUIRED': '영상은 외부로 보내지 않음',
+  'MACOS NOW · WINDOWS NEXT': 'macOS 지원 · Windows 준비 중',
+  'FROM FOOTAGE TO LOG': '촬영본에서 프리뷰 자료까지',
+  'THE PROBLEM': '이런 시간이 남습니다',
+  'ONE WORKSPACE': '한 곳에서 정리',
+  'HOW IT WORKS': '사용 방법',
+  'MADE FOR REAL WORK': '이런 작업에 적합합니다',
+  'WHAT YOU GET': '받을 수 있는 결과물',
+  'LOCAL BY DEFAULT': '기본은 로컬 처리',
+  'SYSTEM REQUIREMENTS': '사용 환경',
+  'SIMPLE TO START': '먼저 확인해보세요',
+  'RELEASE PREPARATION': '출시 준비 중',
+  'GOOD TO KNOW': '시작 전 확인',
+  'NEED A HAND?': '도움이 필요하신가요?',
+};
+
+document.querySelectorAll('.section-kicker, .eyebrow, .trust-inner span').forEach((element) => {
+  const replacement = koreanLabels[element.textContent.trim()];
+  if (replacement) element.textContent = replacement;
+});
