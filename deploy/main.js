@@ -101,7 +101,6 @@ const koreanLabels = {
     'DELIVER TO EDITING': '편집에 전달하기',
   'THE PROBLEM': '이런 시간이 남습니다',
   'ONE WORKSPACE': '한 곳에서 정리',
-  'HOW IT WORKS': '사용 방법',
   'MADE FOR REAL WORK': '이런 작업에 적합합니다',
   'WHAT YOU GET': '받을 수 있는 결과물',
   'LOCAL BY DEFAULT': '기본은 로컬 처리',
