@@ -98,6 +98,7 @@ const koreanLabels = {
     'FROM FOOTAGE TO LOG': '촬영본에서 프리뷰 자료까지',
     'DRAFT YOUR PREVIEW': '프리뷰 초안 만들기',
     'REVIEW & REFINE': '검토하고 다듬기',
+    'DELIVER TO EDITING': '편집에 전달하기',
   'THE PROBLEM': '이런 시간이 남습니다',
   'ONE WORKSPACE': '한 곳에서 정리',
   'HOW IT WORKS': '사용 방법',
