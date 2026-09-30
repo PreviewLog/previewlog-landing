@@ -625,7 +625,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .site-footer { padding: 58px 0 24px; background: var(--color-gray-900); color: var(--color-white); }
 .footer-main { display: flex; align-items: flex-start; justify-content: space-between; }
-.footer-main img { display: block; width: 134px; filter: brightness(0) invert(1); opacity: 0.96; }
+.footer-main img { display: block; width: 154px; height: auto; opacity: 0.96; }
+.footer-brand { display: inline-block; line-height: 0; }
 .footer-main p { margin-top: 18px; color: #8b95a1; font-size: 13px; }
 .footer-links { display: flex; gap: 26px; color: #b0b8c1; font-size: 13px; }
 .footer-links a:hover, .site-footer a:hover { color: var(--color-white); }
