@@ -27,7 +27,7 @@
   --color-accent: var(--color-blue-500);
   --color-accent-soft: var(--color-blue-050);
 
-  --font-family-base: "Noto Sans KR", Manrope, "Toss Product Sans", Tossface,
+  --font-family-base: "Noto Sans KR", "Toss Product Sans", Tossface,
     -apple-system, BlinkMacSystemFont, "SF Pro KR", "Apple SD Gothic Neo", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   --font-family-mono: "DM Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
