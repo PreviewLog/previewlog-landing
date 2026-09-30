@@ -111,6 +111,15 @@ const koreanLabels = {
   'NEED A HAND?': '도움이 필요하신가요?',
 };
 
+document.querySelectorAll('.faq-list details').forEach((detail) => {
+  detail.addEventListener('toggle', () => {
+    if (!detail.open) return;
+    document.querySelectorAll('.faq-list details').forEach((other) => {
+      if (other !== detail) other.open = false;
+    });
+  });
+});
+
 document.querySelectorAll('.section-kicker, .eyebrow, .trust-inner span').forEach((element) => {
   const replacement = koreanLabels[element.textContent.trim()];
   if (replacement) element.textContent = replacement;
