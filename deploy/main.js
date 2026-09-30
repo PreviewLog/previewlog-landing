@@ -115,3 +115,16 @@ document.querySelectorAll('.section-kicker, .eyebrow, .trust-inner span').forEac
   const replacement = koreanLabels[element.textContent.trim()];
   if (replacement) element.textContent = replacement;
 });
+
+const revealItems = document.querySelectorAll('.section-space, .trust-strip, .privacy, .site-footer');
+if ('IntersectionObserver' in window) {
+  revealItems.forEach((element) => element.classList.add('reveal-on-scroll'));
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.08 });
+  revealItems.forEach((element) => revealObserver.observe(element));
+}
