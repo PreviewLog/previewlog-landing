@@ -11,7 +11,7 @@
   --color-gray-800: #212529;
   --color-gray-700: #4e5968;
   --color-gray-600: #6b7684;
-  --color-gray-400: #8b95a1;
+  --color-gray-400: #667085;
   --color-gray-200: #e5e8eb;
   --color-gray-100: #f2f4f6;
   --color-gray-050: #f9fafb;
@@ -27,10 +27,10 @@
   --color-accent: var(--color-blue-500);
   --color-accent-soft: var(--color-blue-050);
 
-  --font-family-base: "Toss Product Sans", Tossface, -apple-system, BlinkMacSystemFont,
-    "SF Pro KR", "Apple SD Gothic Neo", "Noto Sans KR", Roboto,
+  --font-family-base: "Noto Sans KR", "Toss Product Sans", Tossface,
+    -apple-system, BlinkMacSystemFont, "SF Pro KR", "Apple SD Gothic Neo", Roboto,
     "Helvetica Neue", Arial, sans-serif;
-  --font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --font-family-mono: "DM Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 
   --font-size-display: 32px;
   --font-weight-display: 800;

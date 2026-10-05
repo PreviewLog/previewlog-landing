@@ -25,6 +25,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   padding-left: var(--space-6);
 }
 .section-space { padding-top: 128px; padding-bottom: 128px; }
+.reveal-on-scroll { opacity: 0; transform: translateY(18px); transition: opacity 520ms ease, transform 520ms ease; }
+.reveal-on-scroll.is-visible { opacity: 1; transform: none; }
 
 /* Header and controls */
 .site-header {
@@ -315,7 +317,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
   box-shadow: 0 12px 30px rgba(25, 31, 40, 0.1);
   font-size: 10px;
 }
-.floating-note small { display: block; margin-top: 3px; color: var(--color-text-tertiary); font-size: 8px; }
+.floating-note small { display: block; margin-top: 3px; color: var(--color-text-tertiary); font-size: 10px; }
+.floating-note { transition: transform 240ms ease, box-shadow 240ms ease; }
+.hero-product:hover .note-one { transform: translateY(-4px); }
+.hero-product:hover .note-two { transform: translateY(4px); }
 .note-one { top: 31%; left: -36px; }
 .note-two { right: -18px; bottom: 5%; }
 .note-icon {
@@ -368,6 +373,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 .problem-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; margin-top: 72px; }
 .problem-cards article { padding-top: 22px; border-top: 2px solid var(--color-gray-100); }
+.problem-cards article, .feature-card, .output-grid article, .use-case-grid article { transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease; }
+.problem-cards article:hover, .feature-card:hover, .output-grid article:hover, .use-case-grid article:hover { transform: translateY(-4px); }
 .problem-cards span, .use-case-grid span { color: var(--color-accent); font-size: var(--font-size-label); font-weight: 600; }
 .problem-cards h3 {
   margin: 30px 0 10px;
@@ -572,6 +579,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .waitlist-status.is-success { color: #16855b; }
 .waitlist-status.is-error { color: #d33b4b; }
 .waitlist-honeypot { position: absolute !important; left: -10000px; width: 1px !important; height: 1px !important; opacity: 0; pointer-events: none; }
+.waitlist-privacy-notice { margin: 8px 0 0; color: var(--color-text-tertiary); font-size: 11px; line-height: 1.5; text-align: left; }
 .download-note { grid-column: 2; margin-top: 15px; color: var(--color-text-tertiary); font-size: 12px; }
 .download-note a { color: var(--color-text-secondary); font-weight: 600; }
 .download-meta { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(3, 1fr); margin: 40px 4px 0; padding-top: 24px; border-top: 1px solid #cbdff5; }
@@ -625,7 +633,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .site-footer { padding: 58px 0 24px; background: var(--color-gray-900); color: var(--color-white); }
 .footer-main { display: flex; align-items: flex-start; justify-content: space-between; }
-.footer-main img { display: block; width: 134px; filter: brightness(0) invert(1); opacity: 0.96; }
+.footer-main img { display: block; width: 154px; height: auto; opacity: 0.96; }
+.footer-brand { display: inline-block; line-height: 0; }
 .footer-main p { margin-top: 18px; color: #8b95a1; font-size: 13px; }
 .footer-links { display: flex; gap: 26px; color: #b0b8c1; font-size: 13px; }
 .footer-links a:hover, .site-footer a:hover { color: var(--color-white); }
