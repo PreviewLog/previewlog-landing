@@ -24,6 +24,9 @@ cd site && python3 -m http.server 4187
 - `site/install.html` — 설치 가이드
 - `site/requirements.html` — 시스템 요구사항 및 지원 비디오 포맷
 - `site/changelog.html` — 릴리스 노트
+- `site/privacy.html` — 개인정보 처리방침
+- `site/terms.html` — 서비스 이용약관
+- `site/refund.html` — 환불 및 구독 정책
 - `site/tokens.css` — 디자인 시스템 토큰
 - `site/styles.css` — 공통 스타일시트
 - `site/main.js` — 모바일 네비게이션, FAQ 아코디언, 대기자 등록 폼, 스크롤 리빌
