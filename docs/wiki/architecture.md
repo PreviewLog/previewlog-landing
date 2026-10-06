@@ -18,7 +18,7 @@ previewlog-landing/
 │   ├── landing.css            # 메인 및 개편 하위 페이지 공통 다크·반응형 스타일
 │   ├── subpages.css           # 요구사항·설치·변경사항·정책 문서 레이아웃
 │   ├── landing.js             # 화면 예시 보기 전환·타임코드 선택
-│   ├── styles.css             # 미개편 환불 정책 사본 등 기존 스타일
+│   ├── styles.css             # 이전 디자인 스타일 (현재 HTML에서 참조하지 않음)
 │   ├── tokens.css             # 디자인 토큰
 │   ├── main.js                # 네비게이션, FAQ, 대기자 폼 제출 처리
 │   ├── privacy.html           # 개인정보 처리방침
@@ -51,7 +51,7 @@ previewlog-landing/
 ## 3. 대기자 등록 파이프라인 (`/api/waitlist`)
 
 - 메인 랜딩은 `landing.css`와 `landing.js`를 사용합니다. 메뉴·FAQ·등록 처리는 기존 `main.js`를 공유합니다.
-- 요구사항·환불 정책·설치 안내·개인정보 처리방침·변경사항·이용약관은 `landing.css`와 `subpages.css`를 함께 사용하며 별도 스크립트 없이 동작합니다. 앱 연동용 `refund-policy.html` 사본은 이번 요청 범위 밖으로 기존 스타일을 유지합니다.
+- 요구사항·환불 정책·설치 안내·개인정보 처리방침·변경사항·이용약관과 앱 연동용 `refund-policy.html` 사본은 `landing.css`와 `subpages.css`를 함께 사용하며 별도 스크립트 없이 동작합니다.
 - 메인 콘텐츠는 스크롤 등장 애니메이션에 의존하지 않고 기본 표시됩니다. 예시 UI는 외부 서비스나 실제 분석·영상 재생을 호출하지 않습니다.
 
 - **클라이언트**: `site/main.js`의 `.waitlist-form` 이벤트 핸들러가 동일 출처 `POST /api/waitlist`로 JSON 페이로드 전송.
