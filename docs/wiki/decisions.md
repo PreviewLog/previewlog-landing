@@ -25,3 +25,8 @@
 
 ## 2026-10-06 — 다운로드 섹션 2단 그리드 대기자 등록 카드 개편
 - `.download-card` 내부를 좌측 텍스트 정보(`.download-info`)와 우측 독립 카드 형태의 대기자 등록창(`.waitlist-card`)으로 분리하고, 2단 그리드(`minmax(0, 1.15fr) minmax(360px, 440px)`)를 적용하여 뷰포트 변화에도 우측에 안정적으로 고정되도록 디자인을 정돈했습니다.
+
+## 2026-10-06 — 대기자 등록 자체 엔드포인트(`POST /api/waitlist`) 및 D1 연동
+- 구글 스프레드시트(Apps Script `no-cors`) 의존성을 제거하고, 빌드넥스 본사 인프라 철학과 일치하는 Cloudflare Worker + D1 기반의 자체 엔드포인트(`POST /api/waitlist`)로 단일화했습니다.
+- `previewlog-license-server` Worker에서 `POST /api/waitlist`를 직접 수신하여 D1 `waitlist` 테이블에 보관하며, `main.js`는 표준 JSON 통신을 통해 중복 등록(`duplicate: true`) 및 성공 여부를 정밀하게 피드백합니다.
+- 운영자 조회를 위한 인증 보호 엔드포인트(`GET /admin/waitlist`)와 허니팟(honeypot) 봇 필터링, Resend 관리자 알림 연동을 포함했습니다.
