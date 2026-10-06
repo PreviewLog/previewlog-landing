@@ -3,196 +3,525 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#111318" />
     <title>PreviewLog — 촬영본을 편집 가능한 로그로</title>
-    <meta name="description" content="촬영본을 편집용 프리뷰 자료로 빠르게. Mac 로컬에서 프록시 영상을 분석해 대표 컷, 한국어 음성 전사, 타임코드, 품질 경고를 정리하는 데스크톱 앱 PreviewLog입니다." />
+    <meta
+      name="description"
+      content="촬영본을 편집용 프리뷰 자료로 빠르게. Mac 로컬에서 프록시 영상을 분석해 대표 컷, 한국어 음성 전사, 타임코드, 품질 경고를 정리하는 데스크톱 앱 PreviewLog입니다."
+    />
     <link rel="canonical" href="https://previewlog.bldnex.com/" />
-    <link rel="icon" type="image/png" href="./assets/brand/logos/previewlog-logo-light.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/brand/logos/previewlog-logo-light.png"
+    />
 
     <!-- Open Graph / 소셜 공유 -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="PreviewLog" />
     <meta property="og:url" content="https://previewlog.bldnex.com/" />
-    <meta property="og:title" content="PreviewLog — 촬영본을 편집 가능한 로그로" />
-    <meta property="og:description" content="프록시 영상을 로컬에서 분석해 대표 컷, 한국어 전사, 타임코드와 품질 경고를 정리하는 데스크톱 앱." />
-    <meta property="og:image" content="./assets/brand/logos/previewlog-logo-light.png" />
+    <meta
+      property="og:title"
+      content="PreviewLog — 촬영본을 편집 가능한 로그로"
+    />
+    <meta
+      property="og:description"
+      content="프록시 영상을 로컬에서 분석해 대표 컷, 한국어 전사, 타임코드와 품질 경고를 정리하는 데스크톱 앱."
+    />
+    <meta
+      property="og:image"
+      content="./assets/brand/logos/previewlog-logo-light.png"
+    />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="PreviewLog — 촬영본을 편집 가능한 로그로" />
-    <meta name="twitter:description" content="프록시 영상을 로컬에서 분석해 대표 컷, 한국어 전사, 타임코드와 품질 경고를 정리하는 데스크톱 앱." />
-    <meta name="twitter:image" content="./assets/brand/logos/previewlog-logo-light.png" />
+    <meta
+      name="twitter:title"
+      content="PreviewLog — 촬영본을 편집 가능한 로그로"
+    />
+    <meta
+      name="twitter:description"
+      content="프록시 영상을 로컬에서 분석해 대표 컷, 한국어 전사, 타임코드와 품질 경고를 정리하는 데스크톱 앱."
+    />
+    <meta
+      name="twitter:image"
+      content="./assets/brand/logos/previewlog-logo-light.png"
+    />
 
     <!-- 웹폰트 사전 연결 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap"
+    />
 
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./landing.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="PreviewLog 홈">
-        <img src="./assets/brand/logos/previewlog-logo-light.png" alt="PreviewLog" />
-      </a>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+    <header class="site-header shell">
+      <a class="brand" href="#top"
+        ><img
+          src="./assets/brand/logos/previewlog-logo-dark.png"
+          alt="PreviewLog"
+          width="150"
+      /></a>
       <nav class="nav-links" id="primary-navigation" aria-label="주요 메뉴">
-        <a href="#features">기능</a>
-        <a href="#outputs">결과물</a>
-        <a href="#requirements">지원 환경</a>
-        <a href="#pricing">가격</a>
+        <a href="#outputs">결과물</a><a href="#features">작업 흐름</a
+        ><a href="#requirements">지원 환경</a><a href="#pricing">가격</a>
       </nav>
-      <a class="button button-small button-primary" href="#download">출시 알림 받기 <span>↘</span></a>
-      <button class="menu-button" type="button" aria-label="메뉴 열기" aria-controls="primary-navigation" aria-expanded="false">☰</button>
+      <a class="button header-cta" href="#download">출시 알림 받기 ↗</a
+      ><button
+        class="menu-button"
+        type="button"
+        aria-label="메뉴 열기"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
     </header>
-
-    <main id="top">
-      <section class="hero section-shell">
+    <main id="main">
+      <section class="hero shell" id="top">
         <div class="hero-copy">
-          <div class="eyebrow"><span class="eyebrow-dot"></span> 로컬 영상 검토</div>
-          <h1>촬영본 10시간,<br /><em>처음부터 다 보지 마세요</em></h1>
-          <p class="hero-lede">프록시 영상을 로컬에서 분석해 대표 컷, 한국어 대사, 품질 경고를 정리합니다. 촬영 직후 감독·편집자에게 넘길 프리뷰 자료가 준비됩니다.</p>
-          <div class="hero-actions">
-            <a class="button button-primary button-large" href="#download">출시 알림 받기 <span>↗</span></a>
-            <a class="text-link" href="#draft">어떻게 작동하나요? <span>↓</span></a>
+          <p class="eyebrow">
+            <span class="status-dot"></span> macOS · Apple Silicon · 출시 준비
+            중
+          </p>
+          <h1>촬영본 10시간,<br /><em>처음부터 다 보지 마세요.</em></h1>
+          <p class="lede">
+            대표 컷과 한국어 화면 설명·대사를 자동으로 정리합니다.<br />대사로
+            필요한 구간을 찾고, 검토한 내용을 프리뷰 자료로 공유하세요.
+          </p>
+          <div class="actions">
+            <a class="button" href="#download">출시 알림 받기 ↗</a
+            ><a class="text-link" href="#outputs">결과물 예시 보기 ↓</a>
           </div>
-          <p class="microcopy"><span class="lock">⌁</span> 영상과 오디오는 외부로 보내지 않고 내 컴퓨터에서 처리됩니다.</p>
+          <p class="fine">
+            출시 후 14일 무료 체험 · 카드 등록 없이 · 자동 결제 없음
+          </p>
         </div>
-
-        <div class="hero-product" aria-label="PreviewLog 데스크톱 앱 분석 화면">
-          <div class="window-chrome">
-            <div class="mac-buttons"><span class="mac-btn-close"></span><span class="mac-btn-min"></span><span class="mac-btn-max"></span></div>
-            <b>Interview_CamA_Proxy.mov — 1080p ProRes 422 · 29.97fps</b>
-            <span class="engine-tag">Metal GPU ⚡</span>
+        <div class="workspace" aria-label="검토 화면 구성 예시">
+          <div class="window-bar">
+            <span class="window-dots" aria-hidden="true">● ● ●</span
+            ><span>PreviewLog / 인터뷰 프로젝트</span
+            ><span class="example-tag">화면 구성 예시</span>
           </div>
-          <div class="product-body">
-            <aside class="product-sidebar">
-              <div class="mini-mark">P<span>·</span></div>
-              <div class="side-item active" title="장면 및 전사 검토">🎬</div>
-              <div class="side-item" title="프로젝트 클립">🗂️</div>
-              <div class="side-item" title="내보내기">📤</div>
-              <div class="side-bottom">⚙</div>
-            </aside>
-            <div class="review-panel">
-              <div class="review-top">
-                <div>
-                  <small>PROJECT / DOCUMENTARY_EP01</small>
-                  <h3>인터뷰 001 (본관 3층 회의실)</h3>
-                </div>
-                <span class="ready-pill">분석 완료 · 24 씬 검출</span>
-              </div>
-              <div class="metric-row">
-                <div><small>러닝타임</small><strong>18:42:00</strong></div>
-                <div><small>선택 컷</small><strong>24 / 24</strong></div>
-                <div><small>음성 신뢰도</small><strong>98.4%</strong></div>
-                <div><small>검토 경고</small><strong class="warning-number">03 건</strong></div>
-              </div>
-              <div class="film-strip">
-                <div class="frame frame-a">
-                  <div class="frame-preview"></div>
-                  <span class="frame-tc">00:04:18:00</span>
-                  <span class="frame-cut-label">CUT 01</span>
-                </div>
-                <div class="frame frame-b selected">
-                  <div class="frame-preview"></div>
-                  <div class="frame-focus-reticle"></div>
-                  <span class="frame-tc">00:07:32:14</span>
-                  <span class="frame-cut-label">CUT 02 ★</span>
-                </div>
-                <div class="frame frame-c">
-                  <div class="frame-preview"></div>
-                  <span class="frame-tc">00:11:06:08</span>
-                  <span class="frame-cut-label">CUT 03</span>
-                </div>
-                <div class="frame frame-d">
-                  <div class="frame-preview"></div>
-                  <span class="frame-tc">00:15:44:22</span>
-                  <span class="frame-cut-label">CUT 04</span>
-                </div>
-              </div>
-              <div class="audio-timeline">
-                <div class="waveform-bars">
-                  <span style="height: 12px;"></span><span style="height: 16px;"></span><span style="height: 8px;"></span><span style="height: 18px;"></span>
-                  <span style="height: 20px;"></span><span style="height: 14px;"></span><span style="height: 10px;"></span><span style="height: 22px;"></span>
-                  <span style="height: 16px;"></span><span style="height: 12px;"></span><span style="height: 18px;"></span><span style="height: 14px;"></span>
-                  <span class="warn" style="height: 19px;"></span><span class="warn" style="height: 16px;"></span><span class="silent"></span><span class="silent"></span>
-                  <span style="height: 12px;"></span><span style="height: 17px;"></span><span style="height: 20px;"></span><span style="height: 15px;"></span>
-                  <span style="height: 10px;"></span><span style="height: 14px;"></span><span style="height: 19px;"></span><span style="height: 11px;"></span>
-                </div>
-                <div class="timeline-playhead"></div>
-              </div>
-              <div class="detail-row">
-                <div class="detail-block caption-block">
-                  <div class="label-line"><span>AUDIO LOG · 화자 1</span><b>00:07:32:14</b></div>
-                  <p>“좋은 영상은 촬영이 끝난 뒤<br />어떻게 정리하느냐에서 시작됩니다.”</p>
-                  <span class="detail-meta-tag">Whisper Metal · <em>신뢰도 98.4%</em></span>
-                </div>
-                <div class="detail-block scene-block">
-                  <div class="label-line"><span>VISION AI · SCENE ANALYSIS</span><b>✦ 4K NPU</b></div>
-                  <p>인물 인터뷰 미디엄 샷 · 정면 시선<br />실내 3점 조명 구도</p>
-                  <span class="detail-meta-tag">오디오: <em>-14.2 LUFS</em> · 포커스: <em>적정</em></span>
-                </div>
-              </div>
+          <div class="workspace-toolbar">
+            <span class="mono">INTERVIEW_01.mov</span>
+            <div
+              class="view-switch"
+              role="group"
+              aria-label="화면 예시 보기 모드"
+            >
+              <button type="button" data-view="cuts" aria-pressed="false">
+                컷 요약</button
+              ><button type="button" data-view="dialogue" aria-pressed="true">
+                대사 검토
+              </button>
             </div>
           </div>
-          <div class="floating-note note-one">
-            <span class="note-icon">⚡</span>
-            <div><b>Apple Silicon Metal 가속</b><small>1시간 영상 ➔ 3분 40초 완료</small></div>
+          <div class="review-grid">
+            <div class="scene-preview">
+              <div class="scene-art" aria-hidden="true">
+                <div class="scene-window"></div>
+                <div class="scene-person"></div>
+                <div class="scene-table"></div>
+              </div>
+              <div class="scene-caption">
+                <span class="mono" id="demo-time">00:07:32:14</span
+                ><span>선택한 대표 컷</span>
+              </div>
+              <p>
+                실내에서 진행되는 인물 인터뷰.<br />테이블 앞에 앉아 촬영 과정을
+                설명하는 장면.
+              </p>
+              <span class="qc-label">검토 경고 · 무음 구간 확인</span>
+            </div>
+            <div class="dialogue-panel">
+              <div class="panel-heading">
+                <span>대사 검토</span><span class="mono">AUDIO LOG</span>
+              </div>
+              <p class="demo-hint">
+                대사를 선택해 연결된 타임코드를 확인하세요.
+              </p>
+              <button
+                class="dialogue-line"
+                type="button"
+                data-time="00:04:18:00"
+                aria-pressed="false"
+              >
+                <span class="mono">00:04:18:00</span
+                ><span>이번 촬영은 어떤 이야기에서 시작됐나요?</span>
+              </button>
+              <button
+                class="dialogue-line selected"
+                type="button"
+                data-time="00:07:32:14"
+                aria-pressed="true"
+              >
+                <span class="mono">00:07:32:14</span
+                ><span>촬영이 끝나면 장면과 대사를 함께 정리해요.</span>
+              </button>
+              <button
+                class="dialogue-line"
+                type="button"
+                data-time="00:12:08:00"
+                aria-pressed="false"
+              >
+                <span class="mono">00:12:08:00</span
+                ><span>편집할 때 필요한 순간을 다시 찾기 위해서죠.</span>
+              </button>
+              <p class="demo-disclaimer">
+                예시 데이터입니다. 앱에서는 대사를 클릭하면 해당 영상 구간이
+                재생됩니다.
+              </p>
+            </div>
+            <div class="cuts-panel" hidden>
+              <div class="panel-heading">
+                컷 요약 <span class="mono">SCENE INDEX</span>
+              </div>
+              <ol>
+                <li>
+                  <span class="mono">01 / 00:04:18:00</span>
+                  <h3>인터뷰의 시작</h3>
+                  <p>프로젝트를 시작한 배경을 묻는 장면.</p>
+                </li>
+                <li>
+                  <span class="mono">02 / 00:07:32:14</span>
+                  <h3>촬영 후 정리 과정</h3>
+                  <p>장면과 대사를 함께 정리하는 과정을 설명.</p>
+                </li>
+                <li>
+                  <span class="mono">03 / 00:12:08:00</span>
+                  <h3>편집에 전달하기</h3>
+                  <p>필요한 순간을 다시 찾는 작업에 대한 이야기.</p>
+                </li>
+              </ol>
+            </div>
           </div>
-          <div class="floating-note note-two">
-            <span class="note-icon coral">🎬</span>
-            <div><b>자막과 편집 마커</b><small>Premiere · DaVinci Resolve 연동</small></div>
+          <div class="workspace-bottom">
+            <span>대표 컷 → 대사·화면·QC 검토 → 공유</span
+            ><span>분석은 내 컴퓨터에서</span>
           </div>
         </div>
       </section>
-
-      <section class="trust-strip"><div class="section-shell trust-inner"><span>편집 전 촬영본 정리</span><i></i><span>영상은 외부로 보내지 않음</span><i></i><span>macOS 지원 · Windows 준비 중</span><i></i><span>촬영본에서 프리뷰 자료까지</span></div></section>
-
-      <section id="draft" class="problem section-shell section-space">
-        <div class="section-kicker">프리뷰 초안 만들기</div>
-        <div class="split-heading"><h2>촬영본을 넣으면<br /><em>프리뷰 초안이 생성됩니다</em></h2><p>영상과 오디오를 분석해 장면별 대표 컷, 한국어 전사, 타임코드와 검토 정보를 정리합니다. 빈 문서에 처음부터 내용을 옮겨 적는 시간을 줄여줍니다.</p></div>
-        <div class="problem-cards"><article><span>01</span><h3>장면별 대표 컷</h3><p>촬영본을 훑어보며 검토할 프레임과 정확한 위치를 모읍니다.</p></article><article><span>02</span><h3>한국어 대사와 타임코드</h3><p>대사를 원본 위치와 함께 확인할 수 있도록 초안에 담습니다.</p></article><article><span>03</span><h3>장면 설명과 검토 정보</h3><p>장면의 맥락과 무음·흐림 등 다시 볼 부분을 함께 표시합니다.</p></article></div>
+      <section class="outputs shell section" id="outputs">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / SHARE THE REVIEW</p>
+            <h2>받는 사람은<br /><em>PreviewLog가 없어도 됩니다.</em></h2>
+          </div>
+          <p>
+            검토한 컷과 대사를 HTML 한 파일로 전달하세요. 감독·PD·클라이언트는
+            브라우저에서 읽기 전용으로 확인할 수 있습니다.
+          </p>
+        </div>
+        <div class="share-layout">
+          <article class="paper">
+            <div class="paper-top">
+              <span>PREVIEW LOG</span><span>공유 자료 구성 예시</span>
+            </div>
+            <h3>인터뷰 촬영 · 검토 노트</h3>
+            <p>선택한 컷과 대사, 장면 설명을 한눈에.</p>
+            <div class="paper-row">
+              <span class="cut-number">01</span>
+              <div>
+                <span class="mono">00:07:32:14</span>
+                <h4>촬영 후 정리 과정</h4>
+                <p>“촬영이 끝나면 장면과 대사를 함께 정리해요.”</p>
+                <p class="paper-note">
+                  메모 · 작업 과정을 설명하는 구간. 편집 참고.
+                </p>
+              </div>
+            </div>
+            <div class="paper-row">
+              <span class="cut-number">02</span>
+              <div>
+                <span class="mono">00:12:08:00</span>
+                <h4>필요한 순간을 다시 찾기</h4>
+                <p>“편집할 때 필요한 순간을 다시 찾기 위해서죠.”</p>
+              </div>
+            </div>
+            <div class="paper-bottom">
+              읽기 전용 · 예시 데이터 / 실제 내보내기 화면과 다를 수 있습니다.
+            </div>
+          </article>
+          <div class="export-list">
+            <article>
+              <span class="file-type">HTML</span>
+              <h3>브라우저로 함께 검토</h3>
+              <p>
+                앱 설치 없이 확인하는 공유본. 촬영본을 한눈에 파악하고 모든
+                대사를 검토할 수 있습니다.
+              </p>
+            </article>
+            <article>
+              <span class="file-type">PDF · HTML · CSV</span>
+              <h3>편집에 필요한 내용만 전달</h3>
+              <p>검토하며 고른 컷과 대사를 편집 참고 목록으로 내보냅니다.</p>
+            </article>
+            <article>
+              <span class="file-type">SRT · VTT / CSV</span>
+              <h3>자막과 편집 마커로 이어서</h3>
+              <p>
+                촬영 파일별 자막과 편집 참고용 마커를 제공합니다.
+                Premiere·DaVinci Resolve 공통 자막은 SRT를 권장합니다.
+              </p>
+              <a class="text-link" href="./requirements.html"
+                >형식별 호환성 확인 ↗</a
+              >
+            </article>
+          </div>
+        </div>
       </section>
-
-      <section id="features" class="features section-space"><div class="section-shell"><div class="section-kicker">검토하고 다듬기</div><div class="split-heading"><h2>초안을 검토하고<br /><em>편집에 필요한 내용만 남기세요</em></h2><p>자동으로 만들어진 초안을 그대로 넘기지 않고, 컷과 대사를 직접 확인하고 필요한 내용을 수정할 수 있습니다.</p></div><div class="feature-grid"><article class="feature-card feature-wide"><div><span class="feature-number">01 / SELECT</span><h3>컷을 고르고 정리하기</h3><p>장면별 대표 컷을 확인하고 편집에 참고할 컷만 남깁니다.</p></div><div class="feature-visual contact-sheet"><div class="cs-item active"><span>00:01:24</span><b>CUT 01</b><i class="cs-check">✓</i></div><div class="cs-item active"><span>00:04:18</span><b>CUT 02</b><i class="cs-check">✓</i></div><div class="cs-item active"><span>00:07:32</span><b>CUT 03</b><i class="cs-check">✓</i></div><div class="cs-item"><span>00:11:06</span><b>CUT 04</b></div><div class="cs-item active"><span>00:14:50</span><b>CUT 05</b><i class="cs-check">✓</i></div><div class="cs-item"><span>00:18:22</span><b>CUT 06</b></div></div></article><article class="feature-card"><span class="feature-number">02 / EDIT</span><h3>대사와 로그 수정</h3><p>대사, 비디오 로그와 타임코드를 검토하고 필요한 내용을 직접 고칩니다.</p><div class="transcript-visual"><div class="tv-header"><span class="tv-tag">WHISPER KOREAN</span><span class="tv-tc">00:07:32:14</span></div><p>좋은 영상은 촬영이 끝난 뒤<br /><b>어떻게 정리하느냐</b>에서 시작됩니다.</p></div></article><article class="feature-card"><span class="feature-number">03 / REVIEW</span><h3>검토 경고 확인</h3><p>무음, 흐림, 노출 등 다시 확인할 부분을 확인한 뒤 전달 여부를 판단합니다.</p><div class="warning-visual"><div class="wv-header"><span>QUALITY FLAGS</span><span class="wv-count">03 ALERTS</span></div><div class="wv-item"><span>Low Audio Level</span><b>00:12:08</b></div><div class="wv-item"><span>Focus Check</span><b>00:18:22</b></div><div class="wv-item warn-alert"><span>Audio Peak / Clipping</span><b>00:23:41</b></div></div></article></div></div></section>
-
-      <section id="outputs" class="outputs"><div class="section-shell section-space"><div class="section-kicker">편집에 전달하기</div><div class="split-heading"><h2>검토가 끝나면<br /><em>편집용 파일로 내보내세요</em></h2><p>선택한 컷과 수정한 로그를 HTML, PDF, CSV, SRT 등 필요한 형식으로 내보내 편집 작업에 전달합니다. 결과물은 원본 영상과 분리되어 관리됩니다.</p></div><div class="output-grid"><article><b>PREVIEW</b><h3>자체 포함 HTML</h3><p>선택한 컷, 전사, 장면 설명과 메모를 한 파일로 공유합니다.</p></article><article><b>EDITORIAL</b><h3>자막과 마커</h3><p>촬영 파일마다 자막(SRT·VTT)과 편집 마커(CSV)를 냅니다. Premiere·DaVinci Resolve 같은 편집 프로그램으로 가져갈 때 씁니다.</p></article><article><b>REVIEW</b><h3>인쇄·PDF 콘택트시트</h3><p>선택한 대표 컷과 메모를 인쇄 및 PDF로 깔끔하게 내보냅니다.</p></article><article><b>PROJECT</b><h3>JSON · SQLite</h3><p>버전과 수정값을 포함한 프로젝트 데이터를 보존합니다.</p></article></div></div></section>
-
-      <section class="use-cases section-shell section-space"><div class="section-kicker">이런 분들을 위해</div><div class="split-heading"><h2>촬영이 끝난 뒤<br /><em>프리뷰를 준비하는 사람들</em></h2><p>완성본을 자동으로 만드는 편집기가 아닙니다. 촬영본을 검토하고 전달하는 시간을 줄이는 도구입니다.</p></div><div class="use-case-grid"><article><span>01</span><h3>조연출 · 프리뷰 작가</h3><p>테이크와 장면을 빠르게 분류하고 감독·PD에게 프리뷰를 전달합니다.</p></article><article><span>02</span><h3>인터뷰 · 다큐 제작팀</h3><p>긴 촬영본에서 대사, 인물, 장면과 타임코드를 함께 찾습니다.</p></article><article><span>03</span><h3>기업 · 교육 영상팀</h3><p>여러 촬영본을 일괄 정리해 편집자에게 일관된 결과물을 넘깁니다.</p></article><article><span>04</span><h3>데이터 매니저</h3><p>원본은 그대로 보존하면서 프록시와 분석 결과를 별도 프로젝트로 관리합니다.</p></article></div></section>
-
-      <section id="privacy" class="privacy"><div class="section-shell privacy-inner"><div class="privacy-mark">⌁</div><div><div class="section-kicker">기본은 로컬 처리</div><h2>클라우드 업로드 없이<br /><em>내 작업 환경에서</em></h2><p>영상·오디오·전사 결과는 기본적으로 사용자의 컴퓨터에서 처리됩니다. 원본과 프록시 파일은 읽기 전용으로 취급하고, 분석 결과는 지정한 프로젝트 폴더에 저장합니다.</p></div><div class="privacy-badge"><span>LOCAL</span><b>PROCESSING</b><small>Your footage stays<br />where you work.</small></div></div></section>
-
-      <section id="requirements" class="requirements section-shell section-space"><div class="section-kicker">사용 환경</div><div class="requirements-head"><h2>시작 전에<br /><em>이것만 확인하세요</em></h2><a class="text-link" href="./requirements.html">상세 요구사항 보기 <span>↗</span></a></div><div class="requirements-grid"><div class="requirement-main"><div><b>M1+</b><span>Apple Silicon<br />macOS 13 이상</span></div><div><b>8 GB</b><span>최소 메모리<br />16 GB 권장</span></div><div><b>~2 GB</b><span>앱과 기본 모델<br />작업 공간 별도</span></div></div><div class="requirement-notes"><p><b>권장 입력</b> 480p 이상 프록시 영상 · 음성 포함</p><p><b>지원 파일 형식</b> MP4 · MOV · MXF · MTS · M2TS · M4V · AVI · MKV · 3GP</p><p><b>참고</b> 일부 코덱과 카메라 RAW 포맷은 지원하지 않습니다.</p><p><b>인터넷 필요</b> 최초 활성화 · AI 모델 다운로드 · 업데이트 확인 · 기기 확인</p><p class="muted-note">현재 버전은 M1 이상 Apple Silicon Mac을 기준으로 동작합니다. Windows 버전은 출시 예정입니다.</p></div></div></section>
-
-      <section id="pricing" class="pricing section-shell section-space"><div class="section-kicker">체험 및 가격</div><div class="split-heading"><h2>먼저 실제 촬영본으로<br /><em>확인해보세요</em></h2><p>체험 종료 후 자동 결제 없이, PreviewLog가 내 작업 방식에 맞는지 충분히 확인할 수 있습니다.</p></div><div class="pricing-grid"><div class="price-card price-trial"><span class="price-label">TRIAL</span><h3>14일 무료 체험</h3><p>신용카드 등록 없이 모든 기능 사용</p><div class="price-line"><strong>₩0</strong><span>자동 결제 없음</span></div><a class="button button-primary" href="#download">체험판 출시 알림 받기 <span>↘</span></a></div><div class="price-card price-paid"><span class="price-label">ANNUAL</span><h3>연간 구독</h3><p>분석부터 편집용 내보내기까지</p><div class="price-line"><strong>₩120,000</strong><span>+ VAT / 년 (132,000원)</span></div><a class="button button-coral" href="#download">정식 출시 알림 받기 <span>↘</span></a></div><div class="price-perks"><span>INCLUDED</span><p>✓ 대표 컷과 한국어 장면 설명</p><p>✓ 음성 전사와 타임코드</p><p>✓ 자체 포함 HTML · 자막(SRT·VTT)과 편집 마커(CSV)</p><p>✓ 1대 등록 · 연 1회 기기 교체</p><p>✓ 만료 후에도 기존 프로젝트 영구 보존</p><p class="policy-sub-link"><a href="./refund.html">환불 및 구독 정책 상세 안내 보기 <span>↗</span></a></p></div></div></section>
-
-      <section id="download" class="download section-shell section-space">
+      <section class="workflow section" id="features">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 / YOUR REVIEW WORKFLOW</p>
+              <h2>자동으로 정리하고,<br /><em>내 판단으로 다듬으세요.</em></h2>
+            </div>
+            <p>
+              조연출·프리뷰 작가부터 인터뷰·다큐 제작팀까지. 촬영본을 검토하고
+              편집자에게 전달하는 작업을 한 흐름으로 연결합니다.
+            </p>
+          </div>
+          <div class="workflow-grid">
+            <article>
+              <span class="step">01 / ORGANIZE</span>
+              <h3>장면의 흐름을 한눈에</h3>
+              <p>
+                장면 변화를 감지해 대표 컷을 모으고, 비슷한 화면은 묶습니다. 컷
+                요약과 대사 검토 중 작업에 맞는 보기를 선택하세요.
+              </p>
+              <div class="mini-strip" aria-hidden="true">
+                <span>01</span><span>02</span><span>03</span>
+              </div>
+            </article>
+            <article>
+              <span class="step">02 / FIND & EDIT</span>
+              <h3>대사로 찾고, 직접 수정</h3>
+              <p>
+                파일명·대사·설명·컷 번호를 함께 검색합니다. 대사를 클릭해 해당
+                구간을 재생하고, 컷과 텍스트를 수정하세요.
+              </p>
+              <div class="mini-log">
+                <span class="mono">00:07:32:14</span
+                ><span>촬영이 끝나면 <mark>장면과 대사</mark>를…</span>
+              </div>
+            </article>
+            <article>
+              <span class="step">03 / CHECK</span>
+              <h3>다시 볼 화면과 소리 확인</h3>
+              <p>
+                흐림·노출 과다·노출 부족·무음·오디오 클리핑 경고를 확인하세요.
+                품질 표시를 필요할 때 켜고, 검토를 마친 내용만 전달합니다.
+              </p>
+              <div class="qc-tags">
+                <span>흐림</span><span>노출 과다</span><span>노출 부족</span
+                ><span>무음</span><span>오디오 클리핑</span>
+              </div>
+            </article>
+          </div>
+          <details class="advanced">
+            <summary>대사 검토를 위한 세부 기능 <span>+</span></summary>
+            <div>
+              <p>
+                <b>다채널 오디오</b>목소리가 담긴 채널을 반영하고 완전히 무음인
+                채널은 제외합니다. 특정 채널만 다시 전사할 수도 있습니다.
+              </p>
+              <p>
+                <b>클로바노트 전사 교체</b>전사 파일을 교체해 발화자를 구분하고,
+                필요하면 이전 상태로 되돌립니다.
+              </p>
+              <p>
+                <b>수정과 되돌리기</b>컷 추가·숨김·삭제·순서 변경과 대사 수정을
+                지원합니다. 편집 모드에서 되돌리기·다시 실행·저장을 사용할 수
+                있습니다.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section class="section shell environment" id="requirements">
+        <div>
+          <p class="eyebrow">03 / LOCAL BY DEFAULT</p>
+          <h2>촬영본은<br /><em>내 작업 환경 안에서.</em></h2>
+          <p>
+            영상 분석은 사용자 컴퓨터에서 이루어집니다. 민감한 촬영본을 분석
+            서버에 업로드하지 않습니다.
+          </p>
+          <p class="fine">
+            최초 활성화·모델 다운로드·업데이트·기기 확인에는 인터넷이
+            필요합니다.
+          </p>
+        </div>
+        <div class="spec-panel">
+          <h3>시작 전, 사용 환경을 확인하세요.</h3>
+          <dl>
+            <div>
+              <dt>Mac</dt>
+              <dd>Apple Silicon M1 이상 · macOS 13 이상</dd>
+            </div>
+            <div>
+              <dt>메모리</dt>
+              <dd>최소 8 GB · 16 GB 권장</dd>
+            </div>
+            <div>
+              <dt>저장 공간</dt>
+              <dd>
+                앱 약 0.5 GB · 음성 전사 모델 약 575 MB · 화면 분석 모델 약 8.9
+                GB · 작업 공간 별도
+              </dd>
+            </div>
+            <div>
+              <dt>Windows</dt>
+              <dd>출시 예정</dd>
+            </div>
+          </dl>
+          <a class="text-link" href="./requirements.html"
+            >지원 형식과 상세 요구사항 ↗</a
+          >
+        </div>
+      </section>
+      <section class="section shell pricing" id="pricing">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">04 / TRY IT WITH YOUR FOOTAGE</p>
+            <h2>내 촬영본으로<br /><em>먼저 확인하세요.</em></h2>
+          </div>
+          <p>
+            출시 후 14일 동안 모든 기능을 체험하세요. 결제 수단 등록 없이
+            시작하고, 체험이 끝나도 자동으로 결제되지 않습니다.
+          </p>
+        </div>
+        <div class="pricing-grid">
+          <article>
+            <span class="eyebrow">14일 무료 체험</span>
+            <h3>₩0</h3>
+            <p>모든 기능 사용 · 카드 등록 없이</p>
+            <p class="fine">체험 종료 후 자동 유료 전환 없음</p>
+          </article>
+          <article class="annual">
+            <span class="eyebrow">단일 연간 구독</span>
+            <h3>₩132,000<span> / 년</span></h3>
+            <p>공급가 120,000원 + VAT 10%</p>
+            <p class="fine">글로벌 USD 100/년 · 국가별 부가세 별도</p>
+          </article>
+        </div>
+        <div class="license-notes">
+          <span>1개 라이선스 · 1대 등록 · 연 1회 기기 교체</span
+          ><span
+            >만료 후에도 로컬에 저장된 기존 프로젝트·결과 파일 영구 보존</span
+          ><a href="./refund.html">환불·구독 정책 ↗</a>
+        </div>
+      </section>
+      <section class="section shell faq">
+        <p class="eyebrow">BEFORE YOU START</p>
+        <h2>자주 묻는 질문</h2>
+        <div class="faq-list">
+          <details>
+            <summary>
+              AI가 만든 결과는 직접 확인해야 하나요?<span>+</span>
+            </summary>
+            <p>
+              네. 전사와 화면 설명, 품질 경고는 검토를 돕는 보조 결과입니다.
+              중요한 컷과 대사를 영상으로 확인하고 필요한 내용을 수정하세요.
+            </p>
+          </details>
+          <details>
+            <summary>
+              편집 프로그램으로 어떻게 가져가나요?<span>+</span>
+            </summary>
+            <p>
+              Premiere Pro와 DaVinci Resolve 공통 자막 형식은 SRT를 권장합니다.
+              VTT는 지원하는 프로그램에서 사용하세요. CSV 마커 가져오기는
+              프로그램 버전과 형식에 따라 외부 도구가 필요할 수 있으며, 타임코드
+              참고 목록으로도 사용할 수 있습니다.
+              <a href="./requirements.html">자세한 호환성 안내</a>
+            </p>
+          </details>
+          <details>
+            <summary>영상이 서버에 업로드되나요?<span>+</span></summary>
+            <p>
+              기본 분석은 내 컴퓨터에서 수행됩니다. 영상·오디오·전사 결과는
+              사용자가 지원 자료 전송을 직접 선택하지 않는 한 회사 서버로
+              전송하지 않습니다.
+            </p>
+          </details>
+          <details>
+            <summary>
+              구독이 끝나면 프로젝트가 삭제되나요?<span>+</span>
+            </summary>
+            <p>
+              로컬에 저장된 기존 프로젝트와 결과 파일은 삭제되지 않습니다. 구독
+              만료 시 신규 분석과 내보내기는 제한됩니다.
+            </p>
+          </details>
+          <details>
+            <summary>
+              설치나 사용 중 도움이 필요하면 어떻게 하나요?<span>+</span>
+            </summary>
+            <p>
+              <a href="./install.html">설치 가이드</a>를 확인하거나
+              <a href="mailto:BLDNEX.DEV@GMAIL.COM">BLDNEX.DEV@GMAIL.COM</a>으로
+              문의하세요. 앱·운영체제 버전과 오류 상황을 함께 알려주시면 확인에
+              도움이 됩니다.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="section shell download" id="download">
         <div class="download-card">
-          <div class="download-info">
-            <div class="section-kicker">출시 준비 중</div>
-            <h2>설치파일 공개를<br /><em>준비하고 있습니다</em></h2>
-            <p class="download-desc">PreviewLog for macOS · Apple Silicon M1 이상</p>
-            <div class="download-note">
-              <a href="./install.html">설치 가이드</a> · <a href="./changelog.html">변경사항</a> · SHA-256 체크섬은 릴리스 시 연결됩니다.
-            </div>
+          <div>
+            <p class="eyebrow"><span class="status-dot"></span> 출시 준비 중</p>
+            <h2>다음 촬영의 프리뷰를<br /><em>더 수월하게.</em></h2>
+            <p>
+              정식 출시와 14일 무료 체험판 공개 소식을 이메일로 알려드립니다.
+            </p>
+            <p class="fine">
+              macOS · Apple Silicon M1 이상<br />Windows 출시 소식도 신청할 수
+              있습니다.
+            </p>
           </div>
           <div class="waitlist-card">
-            <div class="waitlist-header">
-              <h3>출시 알림 대기자 등록</h3>
-              <p>정식 출시 및 14일 무료 체험판 공개 시 가장 먼저 안내해 드립니다.</p>
-            </div>
-            <form class="download-actions waitlist-form" data-endpoint="/api/waitlist" novalidate>
+            <h3>출시 알림 받기</h3>
+            <form
+              class="download-actions waitlist-form"
+              data-endpoint="/api/waitlist"
+              novalidate
+            >
               <div class="form-group">
                 <label for="waitlist-email">이메일 주소</label>
-                <input id="waitlist-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+                <input
+                  id="waitlist-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                  required
+                />
               </div>
               <div class="waitlist-fields">
                 <div class="form-group">
                   <label for="waitlist-name">이름 (선택)</label>
-                  <input id="waitlist-name" name="name" type="text" autocomplete="name" placeholder="이름 (선택)" />
+                  <input
+                    id="waitlist-name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    placeholder="이름 (선택)"
+                  />
                 </div>
                 <div class="form-group">
                   <label for="waitlist-platform">관심 플랫폼</label>
-                  <select id="waitlist-platform" name="platform" aria-label="관심 플랫폼">
+                  <select
+                    id="waitlist-platform"
+                    name="platform"
+                    aria-label="관심 플랫폼"
+                  >
                     <option value="macos">M1 이상 Mac</option>
                     <option value="windows">Windows (출시 예정)</option>
                   </select>
@@ -202,26 +531,58 @@
                 <input name="consent" type="checkbox" value="yes" required />
                 <span>출시 및 체험판 안내를 이메일로 받아보겠습니다.</span>
               </label>
-              <input class="waitlist-honeypot" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" />
-              <button class="button button-coral button-large" type="submit">대기자 등록 <span>↗</span></button>
-              <span class="waitlist-status" role="status" aria-live="polite"></span>
-              <p class="waitlist-privacy-notice">수집된 이메일은 PreviewLog 출시 및 체험판 안내 외 목적으로 사용되지 않으며, 출시 완료 후 또는 요청 시 지체 없이 파기됩니다. (<a href="./privacy.html" style="color: inherit; text-decoration: underline;">개인정보 처리방침</a>)</p>
+              <input
+                class="waitlist-honeypot"
+                name="website"
+                type="text"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+              />
+              <button class="button button-coral button-large" type="submit">
+                대기자 등록 <span>↗</span>
+              </button>
+              <span
+                class="waitlist-status"
+                role="status"
+                aria-live="polite"
+              ></span>
+              <p class="waitlist-privacy-notice">
+                수집된 이메일은 PreviewLog 출시 및 체험판 안내 외 목적으로
+                사용되지 않으며, 출시 완료 후 또는 요청 시 지체 없이 파기됩니다.
+                (<a
+                  href="./privacy.html"
+                  style="color: inherit; text-decoration: underline"
+                  >개인정보 처리방침</a
+                >)
+              </p>
             </form>
           </div>
         </div>
-        <div class="download-meta">
-          <div><b>M1 이상 Mac</b><span>현재 지원 기준</span></div>
-          <div><b>Windows</b><span>출시 예정</span></div>
-          <div><b>로컬 우선</b><span>기본 분석 방식</span></div>
-        </div>
       </section>
-
-      <section class="faq section-shell section-space"><div class="section-kicker">시작 전 확인</div><div class="faq-layout"><h2>시작하기 전에<br /><em>자주 묻는 질문</em></h2><div class="faq-list"><details open><summary>영상이 서버로 업로드되나요?<span>+</span></summary><p>기본 분석은 사용자의 컴퓨터에서 수행됩니다. 영상·오디오·전사 결과는 사용자가 지원 자료 전송을 직접 선택하지 않는 한 회사 서버로 전송하지 않습니다.</p></details><details><summary>클로바노트나 외부 전사 파일을 쓸 수 있나요?<span>+</span></summary><p>네. 클로바노트에서 내보낸 텍스트 파일(화자 구분 포함)을 불러오면 영상의 타임코드에 맞춰 대사를 자동으로 교체하고 정렬할 수 있습니다.</p></details><details><summary>원본 파일이 변경되나요?<span>+</span></summary><p>원본과 프록시 입력은 읽기 전용으로 취급하며, 분석 결과는 지정한 프로젝트 폴더에 별도로 저장합니다.</p></details><details><summary>원본 대신 프록시를 써도 되나요?<span>+</span></summary><p>프록시 사용을 권장합니다. 길이, 프레임레이트와 시작 타임코드가 일치하면 분석 결과를 원본에 재연결할 수 있습니다.</p></details><details><summary>AI 결과가 틀릴 수도 있나요?<span>+</span></summary><p>네. 전사와 장면 설명은 검토를 돕는 보조 결과입니다. 중요한 장면과 대사는 원본으로 확인하고 필요한 내용을 직접 수정하세요.</p></details><details><summary>인터넷 없이 사용할 수 있나요?<span>+</span></summary><p>영상 분석은 로컬에서 이루어집니다. 최초 활성화, 모델 다운로드, 업데이트와 동시 사용 확인에는 인터넷이 필요합니다.</p></details><details><summary>몇 대의 컴퓨터에서 사용할 수 있나요?<span>+</span></summary><p>개인 라이선스는 한 번에 1대의 기기에만 등록됩니다. 다른 Mac으로 옮길 땐 앱 계정 화면에서 기존 기기를 해제하고 새 기기를 등록하면 되며, 이 교체는 연 1회까지 가능합니다.</p></details><details><summary>구독이 끝나면 프로젝트가 삭제되나요?<span>+</span></summary><p>삭제되지 않습니다. 다만 구독이 만료되면 신규 분석과 편집·내보내기가 제한되며, 다시 구독하면 이용을 재개할 수 있습니다.</p></details><details><summary>지원하지 않는 파일은 어떻게 하나요?<span>+</span></summary><p>카메라 RAW는 현재 지원하지 않습니다. 편집 프로그램이나 카메라 제조사 도구로 MP4 또는 MOV 프록시를 만들어 사용하세요.</p></details></div></div></section>
-
-      <section class="support section-shell section-space"><div class="support-card"><div><div class="section-kicker">도움이 필요하신가요?</div><h2>설치나 분석이 막히면<br /><em>도와드리겠습니다</em></h2><p>앱 버전, 운영체제와 버전, 오류 코드와 재현 절차를 함께 보내주시면 더 빠르게 확인할 수 있습니다. 영상 전체나 원본 경로는 기본 첨부하지 않아도 됩니다.</p></div><div class="support-links"><a href="./install.html">설치 안내 보기 <span>↗</span></a><a class="pending-contact" href="mailto:BLDNEX.DEV@GMAIL.COM">BLDNEX.DEV@GMAIL.COM</a><small>설치 · 미디어 · 성능 · 프로젝트 · 라이선스 문의</small></div></div></section>
     </main>
-
-    <footer class="site-footer"><div class="footer-main section-shell"><div><a class="footer-brand" href="#top" aria-label="PreviewLog 홈으로 이동"><img src="./assets/brand/logos/previewlog-logo-dark.png" alt="PreviewLog" /></a><p>From footage to a workable first draft.</p></div><div class="footer-links"><a href="#features">기능</a><a href="#pricing">가격</a><a href="#download">다운로드</a><a href="./terms.html">이용약관</a><a href="./privacy.html">개인정보 처리방침</a><a href="./refund.html">환불·구독 정책</a></div></div><div class="footer-bottom section-shell"><span>© 2026 PreviewLog · Built by <a href="https://bldnex.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">BLDNEX</a></span><span>Made for thoughtful editors.</span></div></footer>
+    <footer class="shell site-footer">
+      <div>
+        <a href="#top"
+          ><img
+            src="./assets/brand/logos/previewlog-logo-dark.png"
+            alt="PreviewLog"
+            width="140"
+        /></a>
+        <p>From footage to a workable first draft.</p>
+      </div>
+      <div class="footer-links">
+        <a href="./install.html">설치 안내</a
+        ><a href="./changelog.html">변경사항</a
+        ><a href="./terms.html">이용약관</a
+        ><a href="./privacy.html">개인정보 처리방침</a
+        ><a href="./refund.html">환불·구독 정책</a>
+      </div>
+      <p class="copyright">
+        © 2026 PreviewLog · Built by <a href="https://bldnex.com">BLDNEX</a>
+      </p>
+    </footer>
     <script src="./main.js"></script>
+    <script src="./landing.js"></script>
   </body>
 </html>

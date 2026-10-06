@@ -3,112 +3,229 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#111318" />
     <title>환불 및 구독 정책 — PreviewLog</title>
-    <meta name="description" content="PreviewLog의 연간 구독, 14일 무료 체험, 자동 갱신 해지 및 환불 정책 안내. Paddle 결제 시스템 기준과 청약철회 조건 상세." />
+    <meta
+      name="description"
+      content="PreviewLog의 연간 구독, 14일 무료 체험, 자동 갱신 해지 및 환불 정책 안내. Paddle 결제 시스템 기준과 청약철회 조건 상세."
+    />
     <link rel="canonical" href="https://previewlog.bldnex.com/refund.html" />
-    <link rel="icon" type="image/png" href="./assets/brand/logos/previewlog-logo-light.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/brand/logos/previewlog-logo-light.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap"
+    />
+    <link rel="stylesheet" href="./landing.css" />
+    <link rel="stylesheet" href="./subpages.css" />
   </head>
-  <body class="subpage">
-    <header class="site-header">
+  <body class="subpage policy-page">
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+    <header class="site-header shell">
       <a class="brand" href="./">
-        <img src="./assets/brand/logos/previewlog-logo-light.png" alt="PreviewLog" />
+        <img
+          src="./assets/brand/logos/previewlog-logo-dark.png"
+          alt="PreviewLog"
+          width="150"
+        />
       </a>
-      <a class="button button-small button-primary" href="./">랜딩페이지로 돌아가기</a>
+      <a class="text-link back-link" href="./">← PreviewLog 홈</a>
     </header>
 
-    <main>
-      <section class="subpage-hero section-shell">
-        <div class="section-kicker">구독 및 결제</div>
+    <main id="main">
+      <section class="subpage-hero shell">
+        <p class="eyebrow">SUBSCRIPTION & REFUNDS / 구독 및 결제</p>
         <h1>PreviewLog<br /><em>환불 및 구독 정책</em></h1>
-        <p>PreviewLog 연간 구독의 가격 체계, 체험판 정책, 결제 취소 및 환불 기준을 투명하게 안내합니다.</p>
-        <span class="status-label">최종 개정일: 2026년 10월 6일</span>
+        <p>
+          PreviewLog 연간 구독의 가격 체계, 체험판 정책, 결제 취소 및 환불
+          기준을 투명하게 안내합니다.
+        </p>
+        <span class="fine">최종 개정일: 2026년 10월 6일</span>
       </section>
 
-      <section class="subpage-content section-shell">
+      <section class="subpage-content shell">
+        <nav class="policy-nav" aria-label="정책 목차">
+          <a href="#price">상품·가격</a><a href="#trial">무료 체험</a
+          ><a href="#cancel">갱신·해지</a><a href="#refund">환불 기준</a
+          ><a href="#data">데이터 보존</a><a href="#contact">신청·문의</a>
+        </nav>
         <div class="legal-doc">
-          <h2>1. 상품 및 가격</h2>
-          <p>PreviewLog는 1년 단위의 단일 연간 구독 상품을 제공합니다. (영구 라이선스나 월간 구독은 제공하지 않습니다.)</p>
-          <table>
-            <thead>
-              <tr>
-                <th>판매 지역</th>
-                <th>공급가</th>
-                <th>세금(VAT) 및 최종 결제 금액</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>대한민국</td>
-                <td>120,000원 / 년</td>
-                <td>부가가치세 10% (12,000원) 별도<br /><strong>최종 결제 금액: 132,000원</strong></td>
-              </tr>
-              <tr>
-                <td>글로벌 (해외)</td>
-                <td>USD 100 / 년</td>
-                <td>구매자 국가 및 세법에 따라 Paddle에서 세금 자동 계산</td>
-              </tr>
-            </tbody>
-          </table>
-          <p>※ 모든 결제는 글로벌 결제대행사인 Paddle(Merchant of Record)을 통해 안전하게 처리되며, 결제 전 화면에서 적용 세금과 총 결제액이 명확하게 표시됩니다.</p>
+          <h2 id="price">1. 상품 및 가격</h2>
+          <p>
+            PreviewLog는 1년 단위의 단일 연간 구독 상품을 제공합니다. (영구
+            라이선스나 월간 구독은 제공하지 않습니다.)
+          </p>
+          <div
+            class="policy-table"
+            role="region"
+            aria-label="지역별 구독 가격"
+            tabindex="0"
+          >
+            <table>
+              <thead>
+                <tr>
+                  <th>판매 지역</th>
+                  <th>공급가</th>
+                  <th>세금(VAT) 및 최종 결제 금액</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>대한민국</td>
+                  <td>120,000원 / 년</td>
+                  <td>
+                    부가가치세 10% (12,000원) 별도<br /><strong
+                      >최종 결제 금액: 132,000원</strong
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>글로벌 (해외)</td>
+                  <td>USD 100 / 년</td>
+                  <td>구매자 국가 및 세법에 따라 Paddle에서 세금 자동 계산</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            ※ 모든 결제는 글로벌 결제대행사인 Paddle(Merchant of Record)을 통해
+            안전하게 처리되며, 결제 전 화면에서 적용 세금과 총 결제액이 명확하게
+            표시됩니다.
+          </p>
 
-          <h2>2. 14일 무료 체험판 정책</h2>
+          <h2 id="trial">2. 14일 무료 체험판 정책</h2>
           <div class="notice-box">
             <b>체험 종료 후 자동 결제가 절대 발생하지 않습니다.</b>
-            <p>PreviewLog의 14일 무료 체험판은 <strong>신용카드나 결제 수단 등록 없이</strong> 시작할 수 있습니다. 14일이 경과하면 체험 기간이 종료되며, 사용자가 직접 구독 결제를 진행하지 않는 한 어떠한 비용도 청구되지 않습니다.</p>
+            <p>
+              PreviewLog의 14일 무료 체험판은
+              <strong>신용카드나 결제 수단 등록 없이</strong> 시작할 수
+              있습니다. 14일이 경과하면 체험 기간이 종료되며, 사용자가 직접 구독
+              결제를 진행하지 않는 한 어떠한 비용도 청구되지 않습니다.
+            </p>
           </div>
           <ul>
-            <li>체험 기간 중 분석 시간이나 기능에 인위적인 워터마크나 제약을 두지 않습니다.</li>
-            <li>실제 작업 환경에서 충분히 검증한 후 정식 구독 여부를 결정하실 수 있습니다.</li>
+            <li>
+              체험 기간 중 분석 시간이나 기능에 인위적인 워터마크나 제약을 두지
+              않습니다.
+            </li>
+            <li>
+              실제 작업 환경에서 충분히 검증한 후 정식 구독 여부를 결정하실 수
+              있습니다.
+            </li>
           </ul>
 
-          <h2>3. 구독 갱신 및 해지(취소) 방법</h2>
+          <h2 id="cancel">3. 구독 갱신 및 해지(취소) 방법</h2>
           <ul>
-            <li><strong>자동 갱신:</strong> 연간 구독은 결제 주기에 맞춰 1년마다 자동으로 갱신됩니다. 다음 갱신 일자와 갱신 예정 금액은 결제 영수증 및 고객 포털에서 언제든지 확인하실 수 있습니다.</li>
-            <li><strong>해지(자동 결제 중단):</strong> 다음 결제일 전에 <strong>Paddle Customer Portal</strong>(구매 시 수신한 결제 영수증 이메일의 관리 링크)을 통해 클릭 한 번으로 간편하게 해지하실 수 있습니다.</li>
-            <li><strong>해지 후 혜택 유지:</strong> 자동 갱신을 해지하더라도, 이미 결제된 1년의 이용 기간이 종료될 때까지는 모든 기능을 정상적으로 이용하실 수 있습니다.</li>
-            <li><strong>주의사항:</strong> 앱을 삭제하거나 로그아웃하는 것만으로는 구독이 해지되지 않으므로, 반드시 고객 포털에서 해지 처리를 완료하셔야 합니다.</li>
+            <li>
+              <strong>자동 갱신:</strong> 연간 구독은 결제 주기에 맞춰 1년마다
+              자동으로 갱신됩니다. 다음 갱신 일자와 갱신 예정 금액은 결제 영수증
+              및 고객 포털에서 언제든지 확인하실 수 있습니다.
+            </li>
+            <li>
+              <strong>해지(자동 결제 중단):</strong> 다음 결제일 전에
+              <strong>Paddle Customer Portal</strong>(구매 시 수신한 결제 영수증
+              이메일의 관리 링크)을 통해 클릭 한 번으로 간편하게 해지하실 수
+              있습니다.
+            </li>
+            <li>
+              <strong>해지 후 혜택 유지:</strong> 자동 갱신을 해지하더라도, 이미
+              결제된 1년의 이용 기간이 종료될 때까지는 모든 기능을 정상적으로
+              이용하실 수 있습니다.
+            </li>
+            <li>
+              <strong>주의사항:</strong> 앱을 삭제하거나 로그아웃하는 것만으로는
+              구독이 해지되지 않으므로, 반드시 고객 포털에서 해지 처리를
+              완료하셔야 합니다.
+            </li>
           </ul>
 
-          <h2>4. 환불 및 결제 취소 기준</h2>
+          <h2 id="refund">4. 환불 및 결제 취소 기준</h2>
           <h3>전액 환불 대상</h3>
-          <p>다음의 경우 확인 후 지체 없이 전액 환불 또는 결제 취소를 처리합니다.</p>
+          <p>
+            다음의 경우 확인 후 지체 없이 전액 환불 또는 결제 취소를 처리합니다.
+          </p>
           <ul>
             <li>동일 주문에 대해 중복 결제가 발생한 경우</li>
             <li>시스템 오류로 인하여 결제 금액이 오청구된 경우</li>
-            <li>결제 완료 후 시스템 장애로 라이선스 권한이 정상 발급되지 않은 경우</li>
-            <li>소프트웨어의 중대한 결함이나 결측으로 인해 핵심 기능(영상 분석 및 내보내기)의 정상 이용이 불가능한 경우</li>
+            <li>
+              결제 완료 후 시스템 장애로 라이선스 권한이 정상 발급되지 않은 경우
+            </li>
+            <li>
+              소프트웨어의 중대한 결함이나 결측으로 인해 핵심 기능(영상 분석 및
+              내보내기)의 정상 이용이 불가능한 경우
+            </li>
             <li>전자상거래법 등 관계 법령상 청약철회 권리가 인정되는 경우</li>
           </ul>
 
           <h3>단순 변심 및 청약철회 안내</h3>
-          <p>환불 및 청약철회는 적용되는 소비자 보호 법령과 결제 국가, 서비스 제공 상태를 고려해 처리합니다. 디지털 서비스 제공이 시작된 뒤에는 법령상 요건을 충족하는 경우 청약철회가 제한될 수 있습니다. 다만 서비스가 표시·광고 또는 계약 내용과 다르게 제공된 경우 등 법령상 보장되는 권리는 제한되지 않습니다.</p>
-          <p>구매 직후 환불 요청도 신속히 접수해 사유와 상황을 확인하며, 불필요한 설득이나 지연 없이 적용 정책에 따라 안내합니다. 결제 전 제품의 기능과 적합성을 충분히 확인할 수 있도록 <strong>14일 무료 체험판</strong>을 제공하고 있습니다.</p>
+          <p>
+            환불 및 청약철회는 적용되는 소비자 보호 법령과 결제 국가, 서비스
+            제공 상태를 고려해 처리합니다. 디지털 서비스 제공이 시작된 뒤에는
+            법령상 요건을 충족하는 경우 청약철회가 제한될 수 있습니다. 다만
+            서비스가 표시·광고 또는 계약 내용과 다르게 제공된 경우 등 법령상
+            보장되는 권리는 제한되지 않습니다.
+          </p>
+          <p>
+            구매 직후 환불 요청도 신속히 접수해 사유와 상황을 확인하며, 불필요한
+            설득이나 지연 없이 적용 정책에 따라 안내합니다. 결제 전 제품의
+            기능과 적합성을 충분히 확인할 수 있도록
+            <strong>14일 무료 체험판</strong>을 제공하고 있습니다.
+          </p>
 
-          <h2>5. 구독 만료 후 로컬 프로젝트 데이터 보존</h2>
+          <h2 id="data">5. 구독 만료 후 로컬 프로젝트 데이터 보존</h2>
           <div class="notice-box">
             <b>구독이 만료되어도 소중한 프로젝트 데이터는 안전합니다.</b>
-            <p>구독 기간이 만료된 경우 신규 영상 분석 및 편집용 내보내기 기능만 일시 제한되며, <strong>이용자의 로컬 드라이브에 저장된 기존 프로젝트 파일, 데이터베이스, 컷 정보 및 분석 결과물은 절대 삭제되지 않습니다.</strong> 추후 재구독 시 이전 작업 내용을 그대로 이어갈 수 있습니다.</p>
+            <p>
+              구독 기간이 만료된 경우 신규 영상 분석 및 편집용 내보내기 기능만
+              일시 제한되며,
+              <strong
+                >이용자의 로컬 드라이브에 저장된 기존 프로젝트 파일,
+                데이터베이스, 컷 정보 및 분석 결과물은 절대 삭제되지
+                않습니다.</strong
+              >
+              추후 재구독 시 이전 작업 내용을 그대로 이어갈 수 있습니다.
+            </p>
           </div>
 
-          <h2>6. 환불 신청 및 문의 절차</h2>
-          <p>환불이나 결제 관련 문의가 있으신 경우 아래 고객지원 이메일로 주문번호(Paddle Order ID)와 계정 이메일을 함께 보내주시면 신속히 확인하여 안내해 드리겠습니다.</p>
+          <h2 id="contact">6. 환불 신청 및 문의 절차</h2>
+          <p>
+            환불이나 결제 관련 문의가 있으신 경우 아래 고객지원 이메일로
+            주문번호(Paddle Order ID)와 계정 이메일을 함께 보내주시면 신속히
+            확인하여 안내해 드리겠습니다.
+          </p>
           <ul>
-            <li><strong>고객지원 이메일:</strong> <a href="mailto:bldnex.dev@gmail.com">bldnex.dev@gmail.com</a></li>
+            <li>
+              <strong>고객지원 이메일:</strong>
+              <a href="mailto:bldnex.dev@gmail.com">bldnex.dev@gmail.com</a>
+            </li>
             <li><strong>운영 시간:</strong> 평일 10:00 ~ 18:00 (KST)</li>
           </ul>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="footer-bottom section-shell">
-        <span>© 2026 PreviewLog · Built by <a href="https://bldnex.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">BLDNEX</a></span>
-        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+    <footer class="site-footer shell">
+      <div class="footer-bottom">
+        <span
+          >© 2026 PreviewLog · Built by
+          <a
+            href="https://bldnex.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="
+              color: inherit;
+              text-decoration: underline;
+              text-underline-offset: 3px;
+            "
+            >BLDNEX</a
+          ></span
+        >
+        <div class="footer-links">
           <a href="./">PreviewLog 홈</a>
           <a href="./terms.html">이용약관</a>
           <a href="./privacy.html">개인정보 처리방침</a>
