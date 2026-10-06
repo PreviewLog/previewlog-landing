@@ -1,5 +1,10 @@
 # 결정 기록 (Decisions)
 
+## 2026-10-07 — 다크 랜딩 운영 배포
+- 사용자 배포 요청에 따라 main `75d1751`의 정적 파일을 Cloudflare Pages production에 Direct Upload했습니다.
+- 배포 URL: https://3c1c68bd.previewlog-landing.pages.dev
+- 운영 도메인의 메인·푸터 페이지와 신규 CSS/JS 반영을 확인했습니다. `/refund-policy.html`의 Worker 404는 별도 경로 이슈로 기록했으며 Worker는 변경하지 않았습니다.
+
 ## 2026-10-07 — main 병합 및 정적 빌드 검증
 - 사용자 요청에 따라 `feat/review-workflow-landing`의 변경을 main에 병합했습니다.
 - 프로젝트는 별도 컴파일/빌드 명령이 없으며 `site/`가 배포 산출물입니다. JavaScript 문법과 HTML·정적 링크를 검증했습니다. 운영 Direct Upload 배포는 이번 병합·푸시·빌드 요청에서 실행하지 않았습니다.
