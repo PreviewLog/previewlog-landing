@@ -41,3 +41,9 @@
 - 히어로 플로팅 노트: "자막과 편집 마커" (Premiere · DaVinci Resolve 연동)
 - 내보내기(Outputs) EDITORIAL 카드: 제목을 "자막과 마커"로 변경하고, "촬영 파일마다 자막(SRT·VTT)과 편집 마커(CSV)를 냅니다. Premiere·DaVinci Resolve 같은 편집 프로그램으로 가져갈 때 씁니다."로 수정.
 - 가격(Pricing) 포함 내역: "자체 포함 HTML · 자막(SRT·VTT)과 편집 마커(CSV)"로 명시.
+
+## 2026-10-06 — 자막(SRT·VTT) 및 마커(CSV) 편집 도구 호환성 안내 기준 수립
+- 제품 기획 검토 결과에 따라 내보내기 파일의 NLE 호환성 가이드를 `context.md` 및 `site/requirements.html`에 명문화했습니다.
+- 자막: Premiere Pro와 DaVinci Resolve 공통 자막 트랙 호환 포맷으로 SRT를 기본 권장, VTT는 DaVinci Resolve 지원(Premiere는 SRT 권장).
+- 마커: CSV에 컷·대사 위치, 색상, 설명, QC 내용을 기록하며 버전별 편차에 따라 외부 가져오기 도구 또는 타임코드 인덱스로 활용하도록 정리.
+- `requirements.html` 내 라이선스 기기 정책 문구(2대 동시 사용 오기재)를 단일 진실 공급원(1대 등록, 연 1회 교체)에 맞게 정정.
