@@ -33,7 +33,8 @@ previewlog-landing/
 ## 2. 호스팅 및 배포 파이프라인
 
 - **호스팅**: Cloudflare Pages (`previewlog-landing.pages.dev`)
-- **빌드 설정**:
+- **빌드 및 배포 방식**:
+  - Direct Upload 방식으로 관리되며, `npx wrangler pages deploy site --project-name previewlog-landing --branch main`으로 운영 Pages에 즉시 반영됩니다.
   - Framework Preset: `None`
   - Build Command: (없음 / 순수 정적 파일)
   - Build Output Directory: `site`
