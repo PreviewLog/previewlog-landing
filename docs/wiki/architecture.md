@@ -15,7 +15,9 @@ previewlog-landing/
 │   └── roadmap.md
 ├── site/                      # 공개 정적 웹 사이트 배포 루트
 │   ├── index.html             # 메인 랜딩페이지
-│   ├── styles.css             # 메인 스타일시트
+│   ├── landing.css            # 메인 랜딩 전용 다크·반응형 스타일
+│   ├── landing.js             # 화면 예시 보기 전환·타임코드 선택
+│   ├── styles.css             # 요구사항·설치·정책 등 기존 하위 페이지 스타일
 │   ├── tokens.css             # 디자인 토큰
 │   ├── main.js                # 네비게이션, FAQ, 대기자 폼 제출 처리
 │   ├── privacy.html           # 개인정보 처리방침
@@ -46,6 +48,9 @@ previewlog-landing/
   - 304 Not Modified 및 리다이렉트 응답을 보존하여 브라우저 캐시를 효율적으로 활용합니다.
 
 ## 3. 대기자 등록 파이프라인 (`/api/waitlist`)
+
+- 메인 랜딩은 `landing.css`와 `landing.js`를 사용합니다. 메뉴·FAQ·등록 처리는 기존 `main.js`를 공유하며, 하위 페이지는 기존 스타일을 유지합니다.
+- 메인 콘텐츠는 스크롤 등장 애니메이션에 의존하지 않고 기본 표시됩니다. 예시 UI는 외부 서비스나 실제 분석·영상 재생을 호출하지 않습니다.
 
 - **클라이언트**: `site/main.js`의 `.waitlist-form` 이벤트 핸들러가 동일 출처 `POST /api/waitlist`로 JSON 페이로드 전송.
 - **서버 처리**:
