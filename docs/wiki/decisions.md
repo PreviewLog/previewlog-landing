@@ -30,3 +30,8 @@
 - 구글 스프레드시트(Apps Script `no-cors`) 의존성을 제거하고, 빌드넥스 본사 인프라 철학과 일치하는 Cloudflare Worker + D1 기반의 자체 엔드포인트(`POST /api/waitlist`)로 단일화했습니다.
 - `previewlog-license-server` Worker에서 `POST /api/waitlist`를 직접 수신하여 D1 `waitlist` 테이블에 보관하며, `main.js`는 표준 JSON 통신을 통해 중복 등록(`duplicate: true`) 및 성공 여부를 정밀하게 피드백합니다.
 - 운영자 조회를 위한 인증 보호 엔드포인트(`GET /admin/waitlist`)와 허니팟(honeypot) 봇 필터링, Resend 관리자 알림 연동을 포함했습니다.
+
+## 2026-10-06 — 관리자 대시보드(`previewlog-admin`) 대기자 관리 UI 및 CSV 내보내기 도입
+- `previewlog-admin.bldnex.com` 관리자 대시보드에 독립적인 [대기자 명단] 탭을 구축했습니다.
+- 브라우저 localStorage에 보관되는 `ADMIN_API_SECRET`을 통해 대기자 현황 테이블 조회 및 UTF-8 BOM 지원 원클릭 CSV 다운로드가 가능합니다.
+- 빌드넥스 본사 사이트(`bldnex.com`)와의 무리한 DB 통합 없이 PreviewLog 단독 관리자 GUI 내에서 운영을 완결하도록 결정했습니다.
