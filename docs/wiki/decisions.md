@@ -35,3 +35,9 @@
 - `previewlog-admin.bldnex.com` 관리자 대시보드에 독립적인 [대기자 명단] 탭을 구축했습니다.
 - 브라우저 localStorage에 보관되는 `ADMIN_API_SECRET`을 통해 대기자 현황 테이블 조회 및 UTF-8 BOM 지원 원클릭 CSV 다운로드가 가능합니다.
 - 빌드넥스 본사 사이트(`bldnex.com`)와의 무리한 DB 통합 없이 PreviewLog 단독 관리자 GUI 내에서 운영을 완결하도록 결정했습니다.
+
+## 2026-10-06 — 기능 설명 및 내보내기 카피 현실화 (자막과 마커)
+- 추상적인 'NLE 연동' 표현 대신 실제 데스크톱 앱 내보내기 기능 명칭 및 사양에 맞춰 카피를 정밀하게 일치시켰습니다.
+- 히어로 플로팅 노트: "자막과 편집 마커" (Premiere · DaVinci Resolve 연동)
+- 내보내기(Outputs) EDITORIAL 카드: 제목을 "자막과 마커"로 변경하고, "촬영 파일마다 자막(SRT·VTT)과 편집 마커(CSV)를 냅니다. Premiere·DaVinci Resolve 같은 편집 프로그램으로 가져갈 때 씁니다."로 수정.
+- 가격(Pricing) 포함 내역: "자체 포함 HTML · 자막(SRT·VTT)과 편집 마커(CSV)"로 명시.

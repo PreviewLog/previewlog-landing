@@ -14,6 +14,7 @@
 - [x] 다운로드 섹션 2단 그리드 대기자 등록 카드 레이아웃 개편
 - [x] AI 에이전트 위키 메모리 시스템(`AGENTS.md`, `docs/wiki/`) 도입
 - [x] 대기자 등록 자체 엔드포인트 연동 (`POST /api/waitlist`, Cloudflare Worker + D1, 중복 확인 및 JSON 응답)
+- [x] 기능 설명 및 내보내기 카피 현실화 (자막·마커 및 Premiere·DaVinci Resolve 연동 명시)
 
 ## 다음 과제 및 계획
 
