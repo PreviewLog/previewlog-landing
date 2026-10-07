@@ -1,5 +1,10 @@
 # 결정 기록 (Decisions)
 
+## 2026-10-07 — 문장부호 정합성 최적화 (3단 명사 나열 쉼표 A안 적용)
+- 사용자 결정(A안)에 따라 대사 검토 캡션 및 FAQ 1번 답변 내 병렬 명사 3개 나열 구조(`A와 B, C`)를 균등한 쉼표 나열(`A, B, C`)로 정돈했습니다.
+  - Hero 대사 검토 캡션: `화면 설명, 대사, 품질 경고를 한곳에서 검토하세요.`
+  - FAQ 1번 답변: `네. 전사, 화면 설명, 품질 경고는 검토를 돕는 보조 결과입니다.`
+
 ## 2026-10-07 — 텍스트 가독성 최적화 (최소 14px 전면 적용 및 자간·줄간격 개선)
 - **최소 폰트 사이즈 14px 규칙 준수**: 랜딩(`landing.css`) 및 서브페이지(`subpages.css`) 전반에서 14px 미만(10px~13px)이던 모든 텍스트(`.eyebrow`, `.fine`, `.mono`, `.example-tag`, `.view-switch button`, `.capture-panel figcaption`, `.file-type`, `.spec-panel dl`, `.license-notes`, `.waitlist-privacy-notice`, `.footer-links` 등)을 모바일 포함 최소 14px 이상으로 일괄 상향했습니다.
 - **국문 자간(Letter-spacing) 최적화**: 본문 `body`에 미세 음수 자간(`-0.012em`)을 적용해 Noto Sans KR의 단어 결속력을 높였으며, 헤드라인의 과도한 음수 자간(`-0.055em`, `-0.045em`)을 `-0.028em ~ -0.03em`으로 완화하여 한글 받침 겹침 및 답답함을 해소했습니다.
