@@ -1,5 +1,10 @@
 # 결정 기록 (Decisions)
 
+## 2026-10-07 — 실제 캡처 버전 커밋·푸시·운영 배포
+- 사용자 요청으로 `47b6cc5`를 `feat/real-app-screenshots`에 커밋·푸시하고 Cloudflare Pages production에 배포했습니다. Git main 병합은 수행하지 않았습니다.
+- 배포: https://cd458d1d.previewlog-landing.pages.dev
+- 운영 도메인 HTML·CSS·JS 및 캡처 PNG 4종의 HTTP 200과 로컬 파일 바이트 일치를 확인했습니다.
+
 ## 2026-10-07 — 컷 요약 기본 표시
 - 사용자 요청으로 첫 화면의 기본 선택을 컷 요약으로 변경했습니다. 대사 검토는 클릭 시 표시하며 이미지 로딩 우선순위도 컷 요약에 맞췄습니다.
 
