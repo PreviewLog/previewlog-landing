@@ -17,7 +17,7 @@ previewlog-landing/
 │   ├── index.html             # 메인 랜딩페이지
 │   ├── landing.css            # 메인 및 개편 하위 페이지 공통 다크·반응형 스타일
 │   ├── subpages.css           # 요구사항·설치·변경사항·정책 문서 레이아웃
-│   ├── landing.js             # 화면 예시 보기 전환·타임코드 선택
+│   ├── landing.js             # 실제 실행 화면의 컷 요약·대사 검토 전환
 │   ├── styles.css             # 이전 디자인 스타일 (현재 HTML에서 참조하지 않음)
 │   ├── tokens.css             # 디자인 토큰
 │   ├── main.js                # 네비게이션, FAQ, 대기자 폼 제출 처리
@@ -30,6 +30,7 @@ previewlog-landing/
 │   ├── changelog.html         # 변경 기록
 │   ├── _redirects             # Cloudflare Pages 리다이렉트 규칙
 │   └── assets/                # 브랜드 로고 및 정적 그래픽 에셋
+│       └── screenshots/       # 앱 화면 2종 및 read-only-share.png·edit-reference.png 출력물 캡처
 └── apps-script/               # Google Sheets 연동 대기자 수집 스크립트 초안
 ```
 
@@ -53,6 +54,8 @@ previewlog-landing/
 - 메인 랜딩은 `landing.css`와 `landing.js`를 사용합니다. 메뉴·FAQ·등록 처리는 기존 `main.js`를 공유합니다.
 - 요구사항·환불 정책·설치 안내·개인정보 처리방침·변경사항·이용약관과 앱 연동용 `refund-policy.html` 사본은 `landing.css`와 `subpages.css`를 함께 사용하며 별도 스크립트 없이 동작합니다.
 - 메인 콘텐츠는 스크롤 등장 애니메이션에 의존하지 않고 기본 표시됩니다. 예시 UI는 외부 서비스나 실제 분석·영상 재생을 호출하지 않습니다.
+- 첫 화면은 컷 요약 PNG를 기본으로 표시하며 대사 검토 버튼 클릭 시 전환합니다. 컷 요약을 우선 로딩하고 대사 검토는 지연 로딩합니다. 원본 확대 링크는 제공하지 않습니다.
+- 결과물 섹션은 왼쪽 캡처·오른쪽 설명의 2열이며 900px 이하에서는 세로 배치합니다. 왼쪽에서 읽기 전용 공유본·편집 참고 목록을 전환하고 landing.js의 독립된 출력물 버튼 그룹이 표시 상태를 제어합니다. 이미지는 지연 로딩하며 확대 링크 없이 표시합니다.
 
 - **클라이언트**: `site/main.js`의 `.waitlist-form` 이벤트 핸들러가 동일 출처 `POST /api/waitlist`로 JSON 페이로드 전송.
 - **서버 처리**:

@@ -1,23 +1,24 @@
-// Landing-only illustrative controls. No video playback or analysis is simulated.
-const viewButtons = document.querySelectorAll("[data-view]");
-viewButtons.forEach((button) => {
+// Switch between user-provided screenshots of the running app.
+const outputButtons = document.querySelectorAll("[data-output]");
+outputButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const showCuts = button.dataset.view === "cuts";
-    document.querySelector(".cuts-panel").hidden = !showCuts;
-    document.querySelector(".dialogue-panel").hidden = showCuts;
-    viewButtons.forEach((item) =>
+    document.querySelectorAll("[data-output-panel]").forEach((panel) => {
+      panel.hidden = panel.dataset.outputPanel !== button.dataset.output;
+    });
+    outputButtons.forEach((item) =>
       item.setAttribute("aria-pressed", String(item === button)),
     );
   });
 });
 
-const dialogueLines = document.querySelectorAll("[data-time]");
-dialogueLines.forEach((button) => {
+const viewButtons = document.querySelectorAll("[data-view]");
+viewButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    document.querySelector("#demo-time").textContent = button.dataset.time;
-    dialogueLines.forEach((item) => {
-      item.classList.toggle("selected", item === button);
-      item.setAttribute("aria-pressed", String(item === button));
+    document.querySelectorAll("[data-capture]").forEach((panel) => {
+      panel.hidden = panel.dataset.capture !== button.dataset.view;
     });
+    viewButtons.forEach((item) =>
+      item.setAttribute("aria-pressed", String(item === button)),
+    );
   });
 });

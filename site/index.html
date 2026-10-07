@@ -102,109 +102,22 @@
             출시 후 14일 무료 체험 · 카드 등록 없이 · 자동 결제 없음
           </p>
         </div>
-        <div class="workspace" aria-label="검토 화면 구성 예시">
-          <div class="window-bar">
-            <span class="window-dots" aria-hidden="true">● ● ●</span
-            ><span>PreviewLog / 인터뷰 프로젝트</span
-            ><span class="example-tag">화면 구성 예시</span>
-          </div>
+        <div class="workspace product-capture" aria-label="PreviewLog 실제 실행 화면">
           <div class="workspace-toolbar">
-            <span class="mono">INTERVIEW_01.mov</span>
-            <div
-              class="view-switch"
-              role="group"
-              aria-label="화면 예시 보기 모드"
-            >
-              <button type="button" data-view="cuts" aria-pressed="false">
-                컷 요약</button
-              ><button type="button" data-view="dialogue" aria-pressed="true">
-                대사 검토
-              </button>
+            <span class="example-tag">실제 실행 화면</span>
+            <div class="view-switch" role="group" aria-label="실행 화면 선택">
+              <button type="button" data-view="cuts" aria-controls="capture-cuts" aria-pressed="true">컷 요약</button>
+              <button type="button" data-view="dialogue" aria-controls="capture-dialogue" aria-pressed="false">대사 검토</button>
             </div>
           </div>
-          <div class="review-grid">
-            <div class="scene-preview">
-              <div class="scene-art" aria-hidden="true">
-                <div class="scene-window"></div>
-                <div class="scene-person"></div>
-                <div class="scene-table"></div>
-              </div>
-              <div class="scene-caption">
-                <span class="mono" id="demo-time">00:07:32:14</span
-                ><span>선택한 대표 컷</span>
-              </div>
-              <p>
-                실내에서 진행되는 인물 인터뷰.<br />테이블 앞에 앉아 촬영 과정을
-                설명하는 장면.
-              </p>
-              <span class="qc-label">검토 경고 · 무음 구간 확인</span>
-            </div>
-            <div class="dialogue-panel">
-              <div class="panel-heading">
-                <span>대사 검토</span><span class="mono">AUDIO LOG</span>
-              </div>
-              <p class="demo-hint">
-                대사를 선택해 연결된 타임코드를 확인하세요.
-              </p>
-              <button
-                class="dialogue-line"
-                type="button"
-                data-time="00:04:18:00"
-                aria-pressed="false"
-              >
-                <span class="mono">00:04:18:00</span
-                ><span>이번 촬영은 어떤 이야기에서 시작됐나요?</span>
-              </button>
-              <button
-                class="dialogue-line selected"
-                type="button"
-                data-time="00:07:32:14"
-                aria-pressed="true"
-              >
-                <span class="mono">00:07:32:14</span
-                ><span>촬영이 끝나면 장면과 대사를 함께 정리해요.</span>
-              </button>
-              <button
-                class="dialogue-line"
-                type="button"
-                data-time="00:12:08:00"
-                aria-pressed="false"
-              >
-                <span class="mono">00:12:08:00</span
-                ><span>편집할 때 필요한 순간을 다시 찾기 위해서죠.</span>
-              </button>
-              <p class="demo-disclaimer">
-                예시 데이터입니다. 앱에서는 대사를 클릭하면 해당 영상 구간이
-                재생됩니다.
-              </p>
-            </div>
-            <div class="cuts-panel" hidden>
-              <div class="panel-heading">
-                컷 요약 <span class="mono">SCENE INDEX</span>
-              </div>
-              <ol>
-                <li>
-                  <span class="mono">01 / 00:04:18:00</span>
-                  <h3>인터뷰의 시작</h3>
-                  <p>프로젝트를 시작한 배경을 묻는 장면.</p>
-                </li>
-                <li>
-                  <span class="mono">02 / 00:07:32:14</span>
-                  <h3>촬영 후 정리 과정</h3>
-                  <p>장면과 대사를 함께 정리하는 과정을 설명.</p>
-                </li>
-                <li>
-                  <span class="mono">03 / 00:12:08:00</span>
-                  <h3>편집에 전달하기</h3>
-                  <p>필요한 순간을 다시 찾는 작업에 대한 이야기.</p>
-                </li>
-              </ol>
-            </div>
-          </div>
-          <div class="workspace-bottom">
-            <span>대표 컷 → 대사·화면·QC 검토 → 공유</span
-            ><span>분석은 내 컴퓨터에서</span>
-          </div>
+          <figure id="capture-dialogue" class="capture-panel" data-capture="dialogue" hidden>
+            <img src="./assets/screenshots/dialogue-review.png" width="1901" height="991" loading="lazy" alt="PreviewLog 대사 검토 화면. 대표 컷 옆에 화면 설명과 타임코드별 대사가 정리되고, 오른쪽에 영상과 품질 경고가 표시됩니다." />
+            <figcaption><span>화면 설명과 대사, 품질 경고를 한곳에서 검토하세요.</span></figcaption>
+          </figure>
+          <figure id="capture-cuts" class="capture-panel" data-capture="cuts">
+            <img src="./assets/screenshots/cut-summary.png" width="1898" height="986" fetchpriority="high" alt="PreviewLog 컷 요약 화면. 촬영 파일별 대표 컷과 타임코드가 나열되고, 흐림 경고와 묶인 컷 수를 함께 확인할 수 있습니다." />
+            <figcaption><span>촬영 파일별 대표 컷으로 전체 흐름을 파악하세요.</span></figcaption>
+          </figure>
         </div>
       </section>
       <section class="outputs shell section" id="outputs">
@@ -218,36 +131,23 @@
             브라우저에서 읽기 전용으로 확인할 수 있습니다.
           </p>
         </div>
-        <div class="share-layout">
-          <article class="paper">
-            <div class="paper-top">
-              <span>PREVIEW LOG</span><span>공유 자료 구성 예시</span>
+        <div class="output-layout">
+        <div class="output-gallery">
+          <div class="workspace-toolbar">
+            <span class="example-tag">실제 출력물 캡처</span>
+            <div class="view-switch" role="group" aria-label="출력물 선택">
+              <button type="button" data-output="share" aria-controls="output-share" aria-pressed="true">읽기 전용 공유본</button>
+              <button type="button" data-output="reference" aria-controls="output-reference" aria-pressed="false">편집 참고 목록</button>
             </div>
-            <h3>인터뷰 촬영 · 검토 노트</h3>
-            <p>선택한 컷과 대사, 장면 설명을 한눈에.</p>
-            <div class="paper-row">
-              <span class="cut-number">01</span>
-              <div>
-                <span class="mono">00:07:32:14</span>
-                <h4>촬영 후 정리 과정</h4>
-                <p>“촬영이 끝나면 장면과 대사를 함께 정리해요.”</p>
-                <p class="paper-note">
-                  메모 · 작업 과정을 설명하는 구간. 편집 참고.
-                </p>
-              </div>
-            </div>
-            <div class="paper-row">
-              <span class="cut-number">02</span>
-              <div>
-                <span class="mono">00:12:08:00</span>
-                <h4>필요한 순간을 다시 찾기</h4>
-                <p>“편집할 때 필요한 순간을 다시 찾기 위해서죠.”</p>
-              </div>
-            </div>
-            <div class="paper-bottom">
-              읽기 전용 · 예시 데이터 / 실제 내보내기 화면과 다를 수 있습니다.
-            </div>
-          </article>
+          </div>
+          <figure class="output-capture" id="output-share" data-output-panel="share">
+            <img src="./assets/screenshots/read-only-share.png" width="874" height="948" loading="lazy" alt="읽기 전용 공유본. 장면별 대표 컷과 화면 설명, 타임코드별 대사가 함께 정리된 실제 출력물." />
+          </figure>
+          <figure class="output-capture" id="output-reference" data-output-panel="reference" hidden>
+            <img src="./assets/screenshots/edit-reference.png" width="873" height="945" loading="lazy" alt="편집 참고 목록. 검토에서 고른 컷과 대사를 순번, 화면, 타임코드, 내용 열로 정리한 실제 출력물." />
+          </figure>
+        </div>
+        <div class="output-details">
           <div class="export-list">
             <article>
               <span class="file-type">HTML</span>
@@ -274,6 +174,7 @@
               >
             </article>
           </div>
+        </div>
         </div>
       </section>
       <section class="workflow section" id="features">
