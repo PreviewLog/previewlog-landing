@@ -22,6 +22,7 @@ body {
   font:
     16px/1.75 "Noto Sans KR",
     sans-serif;
+  letter-spacing: -0.012em;
   word-break: keep-all;
 }
 a {
@@ -62,8 +63,8 @@ h1,
 h2,
 h3,
 h4 {
-  line-height: 1.3;
-  letter-spacing: -0.045em;
+  line-height: 1.32;
+  letter-spacing: -0.028em;
   margin: 0 0 20px;
 }
 h2 {
@@ -86,17 +87,18 @@ em {
 }
 .eyebrow,
 .step {
-  font-size: 12px;
-  letter-spacing: 0.08em;
+  font-size: 14px;
+  letter-spacing: 0.05em;
   color: var(--blue);
   font-weight: 600;
 }
 .mono {
-  font: 12px/1.6 var(--mono);
+  font: 14px/1.6 var(--mono);
   letter-spacing: 0;
 }
 .fine {
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 1.6;
   color: var(--muted);
 }
 .status-dot {
@@ -162,9 +164,9 @@ em {
   background: #2566c8;
 }
 .header-cta {
-  min-height: 40px;
-  padding: 8px 16px;
-  font-size: 13px;
+  min-height: 42px;
+  padding: 9px 18px;
+  font-size: 14px;
 }
 .menu-button {
   display: none;
@@ -180,9 +182,9 @@ em {
 }
 .hero h1 {
   font-size: clamp(38px, 5.1vw, 66px);
-  line-height: 1.2;
+  line-height: 1.25;
   font-weight: 800;
-  letter-spacing: -0.055em;
+  letter-spacing: -0.03em;
   margin-bottom: 26px;
 }
 .lede {
@@ -223,14 +225,16 @@ em {
   padding: 16px 20px;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 1.6;
 }
 .example-tag {
   margin-left: auto;
   border: 1px solid #46505e;
   border-radius: 4px;
-  padding: 1px 7px;
-  font-size: 11px;
+  padding: 2px 8px;
+  font-size: 14px;
+  font-weight: 500;
 }
 .workspace-toolbar {
   display: flex;
@@ -251,9 +255,10 @@ em {
   border: 0;
   background: transparent;
   color: var(--muted);
-  padding: 6px 14px;
+  padding: 7px 16px;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 500;
 }
 .view-switch button[aria-pressed="true"] {
   background: #2c3e59;
@@ -303,7 +308,7 @@ em {
   gap: 8px;
 }
 .output-capture h3 { margin: 0; font-size: 18px; }
-.output-capture figcaption span { font-size: 12px; color: var(--muted); }
+.output-capture figcaption span { font-size: 14px; color: var(--muted); }
 .output-capture img { display: block; width: 100%; height: auto; }
 .output-details .export-list {
   display: grid;
@@ -326,8 +331,9 @@ em {
   border: 0;
 }
 .file-type {
-  font: 12px var(--mono);
+  font: 14px var(--mono);
   color: var(--blue);
+  font-weight: 500;
 }
 .export-list h3 {
   margin: 10px 0;
@@ -369,7 +375,7 @@ em {
   flex: 1;
   padding: 20px 8px 8px;
   background: linear-gradient(145deg, #53606c, #273444);
-  font: 12px var(--mono);
+  font: 14px var(--mono);
   border-radius: 4px;
 }
 .mini-log {
@@ -380,7 +386,8 @@ em {
   border-left: 2px solid var(--blue);
   padding: 13px;
   margin-top: auto;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 1.6;
 }
 .mini-log .mono {
   color: var(--blue);
@@ -397,10 +404,10 @@ mark {
   padding-top: 15px;
 }
 .qc-tags span {
-  font-size: 11px;
+  font-size: 14px;
   color: #e9bc77;
   border: 1px solid #6a5233;
-  padding: 6px;
+  padding: 6px 10px;
   border-radius: 4px;
 }
 .advanced {
@@ -463,8 +470,9 @@ details[open] > summary span {
 .spec-panel dl div {
   display: grid;
   grid-template-columns: 80px 1fr;
-  gap: 10px;
-  font-size: 13px;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.6;
   padding: 14px 0;
   border-bottom: 1px solid var(--line);
 }
@@ -510,7 +518,8 @@ dd {
   flex-wrap: wrap;
   gap: 12px 28px;
   margin-top: 24px;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 1.6;
   color: var(--muted);
 }
 .license-notes a {
@@ -561,7 +570,8 @@ dd {
   margin-bottom: 18px;
 }
 .form-group label {
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 500;
 }
 .form-group input,
 .form-group select {
@@ -587,7 +597,8 @@ dd {
   display: flex;
   gap: 10px;
   align-items: flex-start;
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 1.6;
   margin-bottom: 18px;
 }
 .waitlist-consent input {
@@ -609,7 +620,7 @@ dd {
 }
 .waitlist-status {
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   margin-top: 12px;
 }
 .is-error {
@@ -619,8 +630,8 @@ dd {
   color: #96e1b6;
 }
 .waitlist-privacy-notice {
-  font-size: 11px;
-  line-height: 1.8;
+  font-size: 14px;
+  line-height: 1.7;
   margin: 12px 0 0;
 }
 .site-footer {
@@ -632,14 +643,14 @@ dd {
   gap: 28px;
 }
 .site-footer p {
-  font-size: 12px;
+  font-size: 14px;
   margin: 12px 0 0;
 }
 .footer-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-  font-size: 12px;
+  gap: 18px;
+  font-size: 14px;
   color: var(--muted);
 }
 .copyright {
@@ -729,7 +740,7 @@ dd {
     line-height: 1.25;
   }
   .hero .eyebrow {
-    font-size: 10px;
+    font-size: 14px;
     letter-spacing: 0.02em;
   }
   .lede {
@@ -744,24 +755,25 @@ dd {
     flex-wrap: wrap;
   }
   .fine {
-    font-size: 12px;
+    font-size: 14px;
   }
   .example-tag {
-    font-size: 10px;
+    font-size: 14px;
   }
   .workspace-toolbar {
     padding: 12px;
     flex-wrap: wrap;
   }
   .workspace-toolbar > .mono {
-    font-size: 11px;
+    font-size: 14px;
   }
   .view-switch {
     width: 100%;
   }
   .view-switch button {
     flex: 1;
-    min-height: 36px;
+    min-height: 38px;
+    font-size: 14px;
   }
   .section {
     padding-block: 48px;
@@ -777,7 +789,7 @@ dd {
     margin-bottom: 28px;
   }
   .section-heading > p {
-    font-size: 14px;
+    font-size: 15px;
   }
   .export-list article {
     padding: 20px 0;
@@ -801,14 +813,14 @@ dd {
     gap: 0;
   }
   .advanced summary {
-    font-size: 14px;
+    font-size: 15px;
   }
   .spec-panel {
     padding: 22px;
   }
   .spec-panel dl div {
-    grid-template-columns: 66px 1fr;
-    font-size: 12px;
+    grid-template-columns: 74px 1fr;
+    font-size: 14px;
   }
   .pricing-grid article {
     padding: 26px;
@@ -819,9 +831,10 @@ dd {
   .license-notes {
     display: grid;
     gap: 12px;
+    font-size: 14px;
   }
   .faq-list summary {
-    font-size: 14px;
+    font-size: 15px;
   }
   .download {
     padding-top: 16px;
@@ -833,17 +846,18 @@ dd {
     font-size: 29px;
   }
   .download-card p {
-    font-size: 14px;
+    font-size: 15px;
   }
   .download-card .fine {
-    font-size: 12px;
+    font-size: 14px;
   }
   .waitlist-fields {
     grid-template-columns: 1fr;
     gap: 0;
   }
   .download-card .waitlist-privacy-notice {
-    font-size: 11px;
+    font-size: 14px;
+    line-height: 1.6;
   }
   .site-footer {
     padding-top: 30px;

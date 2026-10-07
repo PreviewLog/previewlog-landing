@@ -19,7 +19,7 @@
   align-items: center;
 }
 .release-placeholder span {
-  font: 12px var(--mono);
+  font: 14px var(--mono);
   color: var(--muted);
 }
 .release-placeholder strong {
@@ -91,7 +91,7 @@
   border-radius: 5px;
   padding: 8px 14px;
   color: var(--blue);
-  font-size: 13px;
+  font-size: 14px;
 }
 .legal-doc h2 {
   font-size: 25px;
@@ -160,7 +160,7 @@
     gap: 8px;
   }
   .policy-nav a {
-    font-size: 12px;
+    font-size: 14px;
     padding: 8px 12px;
   }
   .legal-doc h2 {
@@ -171,7 +171,7 @@
     font-size: 14px;
   }
   .policy-table table {
-    font-size: 12px;
+    font-size: 14px;
   }
   .policy-table th,
   .policy-table td {
@@ -218,7 +218,7 @@
 }
 .requirements-highlights span {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
 }
 .subpage-content {
   padding-bottom: 64px;
@@ -306,21 +306,21 @@
   gap: 24px;
   width: 100%;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 14px;
 }
 @media (max-width: 640px) {
   .subpage .brand img {
     width: 120px;
   }
   .subpage .back-link {
-    font-size: 12px;
+    font-size: 14px;
   }
   .subpage-hero {
     padding-top: 44px;
     padding-bottom: 36px;
   }
   .subpage-hero .eyebrow {
-    font-size: 10px;
+    font-size: 14px;
   }
   .subpage-hero > p:not(.eyebrow) {
     font-size: 14px;
@@ -341,14 +341,14 @@
     font-size: 20px;
   }
   .requirements-highlights span {
-    font-size: 12px;
+    font-size: 14px;
     text-align: right;
   }
   .spec-table > div {
     grid-template-columns: 72px 1fr;
     gap: 14px;
     padding: 16px;
-    font-size: 13px;
+    font-size: 14px;
   }
   .format-box {
     padding-top: 32px;
