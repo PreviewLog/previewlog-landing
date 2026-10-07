@@ -166,20 +166,6 @@ em {
   padding: 8px 16px;
   font-size: 13px;
 }
-.button-coral {
-  background: #ea5a47;
-  border: 1px solid #ff7d6b;
-  color: white;
-}
-.button-coral:hover {
-  background: #d84532;
-  border-color: #f76854;
-}
-.button-large {
-  min-height: 52px;
-  font-size: 16px;
-  font-weight: 700;
-}
 .menu-button {
   display: none;
 }
