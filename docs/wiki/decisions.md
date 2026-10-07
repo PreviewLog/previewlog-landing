@@ -1,5 +1,15 @@
 # 결정 기록 (Decisions)
 
+## 2026-10-07 — 랜딩페이지 디자인 및 카피 정밀 고도화
+- **CTA 버튼 스타일 및 레이블 일관화**: 대기자 폼 버튼에 `.button-coral` (코랄 오렌지 액센트 `#ea5a47`) 및 `.button-large` 스타일을 적용해 시인성을 강화하고, 레이블을 사이트 전반과 일치하도록 "출시 알림 받기 ↗"로 통일했습니다. `main.js`의 처리 상태 및 완료 피드백 메시지도 "출시 알림 신청" 어휘로 일치시켰습니다.
+- **카피 디테일 통일**:
+  - 결과물 포맷 태그: `SRT · VTT / CSV`의 슬래시를 가운뎃점으로 통일(`SRT · VTT · CSV`).
+  - 고객지원 이메일: FAQ 5번의 대문자 링크(`BLDNEX.DEV@GMAIL.COM`)를 소문자(`bldnex.dev@gmail.com`)로 변경.
+  - 무료 체험 정책 문구: 가격 카드 부가 설명을 히어로와 일치하도록 "체험 종료 후 자동 결제 없음"으로 통일.
+- **레거시 코드 정리**:
+  - `landing.css`에서 실제 스크린샷 도입으로 사용되지 않게 된 구 CSS 일러스트레이션(`.scene-art`, `.paper`, `.cuts-panel` 등 약 230줄) 제거.
+  - `main.js`에서 구 마크업 클래스를 참조하던 미사용 `IntersectionObserver` 코드 제거.
+
 ## 2026-10-07 — 실제 캡처 버전 커밋·푸시·운영 배포
 - 사용자 요청으로 `47b6cc5`를 `feat/real-app-screenshots`에 커밋·푸시하고 Cloudflare Pages production에 배포했습니다. Git main 병합은 수행하지 않았습니다.
 - 배포: https://cd458d1d.previewlog-landing.pages.dev

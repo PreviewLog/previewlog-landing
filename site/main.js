@@ -65,11 +65,11 @@ waitlistForm?.addEventListener('submit', async (event) => {
 
   if (submitButton) {
     submitButton.disabled = true;
-    submitButton.textContent = '등록 중…';
+    submitButton.textContent = '신청 중…';
   }
   if (status) {
     status.className = 'waitlist-status';
-    status.textContent = '등록 정보를 보내고 있습니다.';
+    status.textContent = '신청 정보를 보내고 있습니다.';
   }
 
   try {
@@ -91,24 +91,24 @@ waitlistForm?.addEventListener('submit', async (event) => {
     if (result.duplicate) {
       if (status) {
         status.className = 'waitlist-status is-success';
-        status.textContent = '이미 등록된 이메일입니다. 출시 시 가장 먼저 안내해 드리겠습니다.';
+        status.textContent = '이미 신청된 이메일입니다. 출시 시 가장 먼저 안내해 드리겠습니다.';
       }
     } else {
       waitlistForm.reset();
       if (status) {
         status.className = 'waitlist-status is-success';
-        status.textContent = '대기자 등록이 완료되었습니다. 출시 소식을 가장 먼저 알려드리겠습니다.';
+        status.textContent = '출시 알림 신청이 완료되었습니다. 출시 소식을 가장 먼저 알려드리겠습니다.';
       }
     }
   } catch (error) {
     if (status) {
       status.className = 'waitlist-status is-error';
-      status.textContent = '등록에 실패했습니다. 이메일 주소를 다시 확인하거나 잠시 후 다시 시도해 주세요.';
+      status.textContent = '신청에 실패했습니다. 이메일 주소를 다시 확인하거나 잠시 후 다시 시도해 주세요.';
     }
   } finally {
     if (submitButton) {
       submitButton.disabled = false;
-      submitButton.innerHTML = '대기자 등록 <span>↗</span>';
+      submitButton.innerHTML = '출시 알림 받기 <span>↗</span>';
     }
   }
 });
@@ -121,16 +121,3 @@ document.querySelectorAll('.faq-list details').forEach((detail) => {
     });
   });
 });
-
-const revealItems = document.querySelectorAll('.section-space, .trust-strip, .privacy, .site-footer');
-if ('IntersectionObserver' in window) {
-  revealItems.forEach((element) => element.classList.add('reveal-on-scroll'));
-  const revealObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('is-visible');
-      observer.unobserve(entry.target);
-    });
-  }, { threshold: 0.08 });
-  revealItems.forEach((element) => revealObserver.observe(element));
-}
