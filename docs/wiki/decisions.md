@@ -1,5 +1,11 @@
 # 결정 기록 (Decisions)
 
+## 2026-10-09 — SEO 필수 파일(robots.txt, sitemap.xml) 신설 및 클린 canonical URL 통일
+- **robots.txt**: 모든 검색엔진 크롤러 접근 허용(`Allow: /`) 및 sitemap 경로(`https://previewlog.bldnex.com/sitemap.xml`)를 명시한 `site/robots.txt`를 생성했습니다.
+- **sitemap.xml**: 메인 및 6개 서브페이지의 정규 클린 URL(`/`, `/requirements`, `/install`, `/changelog`, `/refund`, `/terms`, `/privacy`)을 표준 XML 스키마로 등록한 `site/sitemap.xml`을 생성했습니다.
+- **canonical URL 정합성**: 하위 7개 HTML 페이지 내 `<link rel="canonical">` 태그를 308 리다이렉트가 발생하는 `.html` 대신 실제 서빙되는 클린 URL로 통일하여 검색엔진 색인 효율을 개선했습니다.
+- **Worker 프록시 연계**: `previewlog-license-server` Worker의 `isLandingRoute`에 `robots.txt`, `sitemap.xml` 및 `.xml` 확장자 프록시 라우팅을 추가하고 배포 완료했습니다.
+
 ## 2026-10-09 — 미사용 레거시 CSS 정리 (styles.css, tokens.css 삭제)
 - 다크 NLE 테마 전면 개편 이전의 구 라이트 테마 시절 잔여 파일인 `site/styles.css` (41KB) 및 `site/tokens.css` (1.9KB)를 삭제했습니다.
 - 8개 HTML 페이지가 모두 `landing.css` 및 `subpages.css`만을 사용하므로 기능적 영향이 없으며, 배포 번들 약 43KB를 절감했습니다.

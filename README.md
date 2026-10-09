@@ -31,6 +31,8 @@ cd site && python3 -m http.server 4187
 - `site/subpages.css` — 하위 안내 및 정책 페이지 스타일시트
 - `site/landing.js` — 앱 및 결과물 캡처 보기 전환 스크립트
 - `site/main.js` — 모바일 네비게이션, FAQ 아코디언, 대기자 등록 폼 처리
+- `site/robots.txt` — 검색엔진 크롤러 접근 규칙 및 사이트맵 위치 안내
+- `site/sitemap.xml` — 정규 URL 색인 사이트맵
 - `site/assets/` — 로고 및 브랜드 에셋
 - `apps-script/Code.gs` — Google Sheets 연동 대기자 등록 엔드포인트 스크립트
 - `LANDING_PAGE_REVIEW.md` — 랜딩페이지 검토 이력 및 가이드

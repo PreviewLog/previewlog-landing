@@ -26,6 +26,8 @@ previewlog-landing/
 │   ├── requirements.html      # 시스템 요구사항 상세
 │   ├── install.html           # 설치 가이드
 │   ├── changelog.html         # 변경 기록
+│   ├── robots.txt             # 검색엔진 크롤러 안내 및 사이트맵 경로
+│   ├── sitemap.xml            # 정규 URL 사이트맵
 │   ├── _redirects             # Cloudflare Pages 리다이렉트 규칙
 │   └── assets/                # 브랜드 로고 및 정적 그래픽 에셋
 │       └── screenshots/       # 앱 화면 2종 및 read-only-share.png·edit-reference.png 출력물 캡처
