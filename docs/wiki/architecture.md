@@ -18,8 +18,6 @@ previewlog-landing/
 │   ├── landing.css            # 메인 및 개편 하위 페이지 공통 다크·반응형 스타일
 │   ├── subpages.css           # 요구사항·설치·변경사항·정책 문서 레이아웃
 │   ├── landing.js             # 실제 실행 화면의 컷 요약·대사 검토 전환
-│   ├── styles.css             # 이전 디자인 스타일 (현재 HTML에서 참조하지 않음)
-│   ├── tokens.css             # 디자인 토큰
 │   ├── main.js                # 네비게이션, FAQ, 대기자 폼 제출 처리
 │   ├── privacy.html           # 개인정보 처리방침
 │   ├── terms.html             # 이용약관
@@ -46,7 +44,7 @@ previewlog-landing/
   - `previewlog.bldnex.com`은 Cloudflare Worker `previewlog-license-server`에 연결되어 있습니다.
   - 데스크톱 앱의 라이선스, 인증, Paddle 결제 웹훅, R2 릴리스 다운로드 요청은 Worker가 직접 처리합니다.
   - 대기자 등록 요청(`POST /api/waitlist`)은 Worker가 직접 수신하여 Cloudflare D1(`waitlist` 테이블)에 기록하고, 중복 등록 검사 및 Resend 관리자 알림을 처리합니다.
-  - 정적 웹 라우트(`/`, `/privacy`, `/terms`, `/refund`, `/styles.css` 등)는 Worker가 `previewlog-landing.pages.dev`로 투명하게 역방향 프록시(Reverse Proxy)합니다.
+  - 정적 웹 라우트(`/`, `/privacy`, `/terms`, `/refund` 등)는 Worker가 `previewlog-landing.pages.dev`로 투명하게 역방향 프록시(Reverse Proxy)합니다.
   - 304 Not Modified 및 리다이렉트 응답을 보존하여 브라우저 캐시를 효율적으로 활용합니다.
 
 ## 3. 대기자 등록 파이프라인 (`/api/waitlist`)

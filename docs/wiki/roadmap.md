@@ -1,5 +1,7 @@
 # 로드맵 (Roadmap)
 
+- [x] 2026-10-09 미사용 레거시 CSS(`styles.css` 41KB, `tokens.css` 1.9KB) 삭제로 배포 번들 최적화.
+- [x] 2026-10-09 Git `main` 브랜치 병합(`feat/real-app-screenshots` Fast-forward) 및 `origin/main` 동기화.
 - [x] 2026-10-09 운영 Cloudflare Worker의 `/refund-policy.html` 404 라우팅 예외 해결. `isLandingRoute` 및 fallback 수정 후 배포 완료(HTTP 200 정상 응답).
 - [x] 2026-10-09 소셜 공유(Open Graph & Twitter) 썸네일 경로를 절대 URL(`https://previewlog.bldnex.com/...`)로 전환.
 - [x] 2026-10-07 텍스트 가독성 최적화(최소 14px 전면 적용, 국문 자간·줄간격 완화) 및 병렬 명사 쉼표(A, B, C) 정합성 정리.
@@ -61,16 +63,12 @@
 ### 추가 개발 및 릴리스 준비 과제 (대기 목록)
 1. **검색엔진 최적화(SEO) 필수 파일 신설 (`robots.txt`, `sitemap.xml`)**:
    - 검색엔진 크롤러 규격에 맞는 `robots.txt` 및 canonical URL 기반 `sitemap.xml` 생성. Worker의 `isLandingRoute`에 `xml` 확장자 프록시 허용 추가.
-2. **미사용 레거시 CSS 정리**:
-   - 구 라이트 테마 시절의 미참조 파일 `site/styles.css`(41KB) 및 `site/tokens.css`(1.9KB) 삭제하여 배포 번들 최적화.
-3. **Git `main` 브랜치 병합**:
-   - 운영 배포 완료된 작업 브랜치(`feat/real-app-screenshots`)를 `main` 브랜치에 Fast-forward 병합하여 원격 저장소 기준선 통일.
-4. **정식 릴리스 DMG 바이너리 및 체크섬 연동**:
+2. **정식 릴리스 DMG 바이너리 및 체크섬 연동**:
    - 데스크톱 앱 정식 빌드 및 공증 완료 시점에 다운로드 카드 버튼 및 SHA-256 체크섬 링크 연결.
    - 현재는 "출시 준비 중" 안내 및 대기자 알림 신청(`POST /api/waitlist`)으로 연결.
-5. **실제 출력 샘플 문서(HTML/PDF) 다운로드 또는 웹 뷰어 제공**:
+3. **실제 출력 샘플 문서(HTML/PDF) 다운로드 또는 웹 뷰어 제공**:
    - 고객이 브라우저에서 직접 열어볼 수 있는 읽기 전용 공유본 샘플 파일(`sample-preview.html` 등) 제공 검토.
-6. **제품 시연 영상(비디오) 탑재**:
+4. **제품 시연 영상(비디오) 탑재**:
    - 실제 촬영본 분석 및 NLE 마커 내보내기 흐름을 담은 시연 비디오가 준비될 경우 비디오 플레이어 추가.
 
 - 아래 진단·제안은 이력입니다. 사용자 승인된 내용은 위 완료 항목에 구현했으며, 프록시–원본 연결 소개 제외 결정을 계속 적용합니다.

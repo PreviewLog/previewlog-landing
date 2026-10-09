@@ -1,5 +1,12 @@
 # 결정 기록 (Decisions)
 
+## 2026-10-09 — 미사용 레거시 CSS 정리 (styles.css, tokens.css 삭제)
+- 다크 NLE 테마 전면 개편 이전의 구 라이트 테마 시절 잔여 파일인 `site/styles.css` (41KB) 및 `site/tokens.css` (1.9KB)를 삭제했습니다.
+- 8개 HTML 페이지가 모두 `landing.css` 및 `subpages.css`만을 사용하므로 기능적 영향이 없으며, 배포 번들 약 43KB를 절감했습니다.
+
+## 2026-10-09 — Git main 브랜치 병합 (feat/real-app-screenshots Fast-forward)
+- 실제 앱 스크린샷 4종 반영, 14px 텍스트 가독성 개선, 쉼표 정합성 최적화, OG 이미지 절대 경로화, 레거시 CSS 정리 작업이 완료된 `feat/real-app-screenshots` 브랜치를 `main` 브랜치에 Fast-forward 병합하고 원격 저장소(`origin/main`)에 푸시하여 저장소 기준선을 통일했습니다.
+
 ## 2026-10-09 — Cloudflare Worker /refund-policy.html 404 라우팅 예외 해결
 - `previewlog-license-server` Worker의 `isLandingRoute` 및 fallback 분기에 `/refund-policy.html`을 등록하여, 해당 경로 접근 시 404 JSON 에러 대신 Pages의 `/refund` 프록시 응답(301/200)을 제공하도록 수정 및 배포 완료했습니다.
 - 테스트(`test/legal_pages.test.ts`)를 추가하고 운영 환경 배포 후 HTTP 200 정상 반환을 확인했습니다.

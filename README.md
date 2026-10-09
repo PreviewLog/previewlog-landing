@@ -27,9 +27,10 @@ cd site && python3 -m http.server 4187
 - `site/privacy.html` — 개인정보 처리방침
 - `site/terms.html` — 서비스 이용약관
 - `site/refund.html` — 환불 및 구독 정책
-- `site/tokens.css` — 디자인 시스템 토큰
-- `site/styles.css` — 공통 스타일시트
-- `site/main.js` — 모바일 네비게이션, FAQ 아코디언, 대기자 등록 폼, 스크롤 리빌
+- `site/landing.css` — 메인 랜딩 및 공통 다크 스타일시트
+- `site/subpages.css` — 하위 안내 및 정책 페이지 스타일시트
+- `site/landing.js` — 앱 및 결과물 캡처 보기 전환 스크립트
+- `site/main.js` — 모바일 네비게이션, FAQ 아코디언, 대기자 등록 폼 처리
 - `site/assets/` — 로고 및 브랜드 에셋
 - `apps-script/Code.gs` — Google Sheets 연동 대기자 등록 엔드포인트 스크립트
 - `LANDING_PAGE_REVIEW.md` — 랜딩페이지 검토 이력 및 가이드
