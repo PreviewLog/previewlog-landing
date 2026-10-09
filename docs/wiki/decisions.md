@@ -1,5 +1,12 @@
 # 결정 기록 (Decisions)
 
+## 2026-10-09 — Cloudflare Worker /refund-policy.html 404 라우팅 예외 해결
+- `previewlog-license-server` Worker의 `isLandingRoute` 및 fallback 분기에 `/refund-policy.html`을 등록하여, 해당 경로 접근 시 404 JSON 에러 대신 Pages의 `/refund` 프록시 응답(301/200)을 제공하도록 수정 및 배포 완료했습니다.
+- 테스트(`test/legal_pages.test.ts`)를 추가하고 운영 환경 배포 후 HTTP 200 정상 반환을 확인했습니다.
+
+## 2026-10-09 — 소셜 공유(Open Graph & Twitter) 이미지 절대 경로 전환
+- 카카오톡, Slack, Twitter/X 등 소셜 공유 봇의 스크랩 규격에 맞추어 `site/index.html` 내 `og:image` 및 `twitter:image` 경로를 상대 경로(`content="./assets/..."`)에서 절대 URL(`https://previewlog.bldnex.com/assets/brand/logos/previewlog-logo-light.png`)로 변경했습니다.
+
 ## 2026-10-07 — 문장부호 정합성 최적화 (3단 명사 나열 쉼표 A안 적용)
 - 사용자 결정(A안)에 따라 대사 검토 캡션 및 FAQ 1번 답변 내 병렬 명사 3개 나열 구조(`A와 B, C`)를 균등한 쉼표 나열(`A, B, C`)로 정돈했습니다.
   - Hero 대사 검토 캡션: `화면 설명, 대사, 품질 경고를 한곳에서 검토하세요.`
