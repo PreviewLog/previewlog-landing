@@ -45,7 +45,7 @@
           PreviewLog는 이용자의 영상과 개인정보를 안전하게 보호하며, 관련 법령을
           철저히 준수합니다.
         </p>
-        <span class="fine">최종 개정일: 2026년 10월 6일</span>
+        <span class="fine">최종 개정일: 2026년 10월 12일</span>
       </section>
 
       <section class="subpage-content shell">
@@ -98,21 +98,27 @@
                 </tr>
                 <tr>
                   <td>회원 및 라이선스</td>
-                  <td>이메일, 기기 식별 해시값, OS 및 앱 버전</td>
+                  <td>이메일, 인증 제공자·외부 계정 식별자, 내부 계정 ID, 기기 구성요소의 salted 해시, 기기 라벨, 앱·OS 정보</td>
                   <td>계정 운영, 1대 등록·연 1회 교체 라이선스 관리</td>
-                  <td>회원 탈퇴 시까지</td>
+                  <td>계정과 권한 유지 기간. 삭제 요청 시 법정 보존 대상 외 삭제</td>
                 </tr>
                 <tr>
                   <td>주문 및 결제</td>
-                  <td>주문번호, 결제 금액, 통화, 결제 상태, PG 거래 식별자</td>
+                  <td>Paddle 고객·거래·구독·조정 식별자, 주문번호, 금액, 통화, 결제·환불 상태, webhook 처리·메일 상태</td>
                   <td>결제 승인, 구독 권한 발급, 환불 및 영수증 처리</td>
                   <td>전자상거래법에 따라 5년간 보관</td>
                 </tr>
                 <tr>
                   <td>고객지원</td>
-                  <td>문의 이메일 주소, 문의 내용, 자발적 첨부 로그</td>
+                  <td>문의 이메일 주소, 문의 내용, 자발적 첨부 로그와 결제 조치 알림 수신 주소</td>
                   <td>오류 해결, 서비스 문의 응대</td>
-                  <td>전자상거래법에 따라 3년간 보관</td>
+                  <td>불만·분쟁 기록은 3년. 결제 조치 기록은 관련 거래 기록과 함께 최대 5년</td>
+                </tr>
+                <tr>
+                  <td>체험·결제 위험 방지</td>
+                  <td>체험 지문과 환불·차지백 사건에 연결된 salted 기기 해시</td>
+                  <td>체험 중복 생성 방지, 반복 환불·차지백 수동 검토</td>
+                  <td>사건 또는 상태 변경 후 최대 365일</td>
                 </tr>
               </tbody>
             </table>
@@ -140,12 +146,16 @@
             </li>
             <li><strong>표시·광고에 관한 기록:</strong> 6개월</li>
           </ul>
+          <p>
+            이메일 로그인 링크는 발급 후 15분 동안만 유효하며 사용·실패·만료 후
+            정리합니다. 백업은 복구에 필요한 기간 동안 접근 제한 저장소에
+            보관하며, 원본 삭제 후 백업 만료 시점까지 남을 수 있습니다.
+          </p>
 
           <h2 id="policy-3">3. 제3자 제공 및 업무 위탁</h2>
           <p>
-            회사는 이용자의 사전 동의 없이 개인정보를 외부에 제공하지 않습니다.
-            원활한 서비스 제공을 위해 다음과 같이 전문 결제대행사에 업무를
-            위탁하여 운영합니다.
+            회사는 광고 목적으로 개인정보를 판매하지 않습니다. 원활한 서비스
+            제공을 위해 다음 외부 서비스에 필요한 범위의 처리를 위탁합니다.
           </p>
           <div
             class="policy-table"
@@ -163,12 +173,15 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Paddle Payments Limited</td>
+                  <td>Paddle (Merchant of Record)</td>
                   <td>
                     글로벌 결제 대행, 정기 구독 결제 및 세금 계산, 인보이스 발행
                   </td>
-                  <td>영국 및 글로벌 인프라</td>
+                  <td>Paddle이 고지하는 구매자 계약 법인 및 글로벌 인프라</td>
                 </tr>
+                <tr><td>Google</td><td>Google OAuth 로그인</td><td>Google의 글로벌 인프라</td></tr>
+                <tr><td>Cloudflare</td><td>Worker·D1 계정·라이선스·결제 이벤트 처리</td><td>Live D1 APAC 및 Cloudflare 운영 인프라</td></tr>
+                <tr><td>Resend</td><td>이메일 로그인 링크와 결제 조치 필요 메일 발송</td><td>Resend 운영 인프라</td></tr>
               </tbody>
             </table>
           </div>
@@ -204,7 +217,11 @@
               <strong>이메일:</strong>
               <a href="mailto:bldnex.dev@gmail.com">bldnex.dev@gmail.com</a>
             </li>
-            <li><strong>운영 주체:</strong> BLDNEX</li>
+            <li><strong>사업자 상호:</strong> 빌드넥스</li>
+            <li><strong>대표자:</strong> 김상규</li>
+            <li><strong>주소:</strong> 경기도 여주시 송현길 31-12</li>
+            <li><strong>고객지원:</strong> <a href="mailto:bldnex.dev@gmail.com">bldnex.dev@gmail.com</a></li>
+            <li>전화번호와 통신판매업 신고 정보는 확인 후 추가로 게시합니다.</li>
           </ul>
         </div>
       </section>
