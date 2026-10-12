@@ -1,5 +1,13 @@
 # 결정 기록 (Decisions)
 
+## 2026-10-12 — 화면 분석 모델 4bit 양자화 모델 교체에 따른 웹사이트 스펙 정정
+- **배경**: 제품 저장소(`previewlog`)에서 화면 분석 모델이 기존 비양자화 `Qwen3-VL-4B-Instruct`(약 8.9 GB, 피크 RSS 8.90 GiB)에서 MLX 최적화 4bit 양자화 모델인 `mlx-community/Qwen3-VL-4B-Instruct-4bit`(revision `2fd8dacb`, 약 2.9 GB, 피크 RSS 3.59~4.74 GiB)로 정식 교체되었습니다. 70장 블라인드 평가에서 60승 10패로 품질이 우수하고 프레임당 추론 속도도 약 1.7초에서 0.8초로 2배 이상 향상되었습니다.
+- **웹사이트 스펙 정정**:
+  - `site/index.html` (L276): 화면 분석 모델 저장공간 표기를 `약 8.9 GB`에서 `약 2.9 GB`로 정정했습니다.
+  - `site/requirements.html` (L71-73): 화면 분석 모델 저장공간 표기를 `약 8.9 GB`에서 `약 2.9 GB`로 정정했습니다.
+  - 음성 전사 모델(약 575 MB) 및 앱 번들(약 0.5 GB)을 포함하여 총 모델 다운로드 용량이 약 3.5 GB 수준(총 설치 약 3.9 GB 내외)으로 감소한 최신 카탈로그 실측을 일치시켰습니다.
+- **메모리 표기 유지**: 4bit 도입으로 작업 세트가 약 3.8 GiB 수준으로 낮아졌으나, 제품 기획 내부 기준에 따라 8 GB 실기기 압박 테스트 전까지는 기존 권장 사양인 `최소 8 GB · 16 GB 권장` 표기를 유지합니다.
+
 ## 2026-10-09 — SEO 필수 파일(robots.txt, sitemap.xml) 신설 및 클린 canonical URL 통일
 - **robots.txt**: 모든 검색엔진 크롤러 접근 허용(`Allow: /`) 및 sitemap 경로(`https://previewlog.bldnex.com/sitemap.xml`)를 명시한 `site/robots.txt`를 생성했습니다.
 - **sitemap.xml**: 메인 및 6개 서브페이지의 정규 클린 URL(`/`, `/requirements`, `/install`, `/changelog`, `/refund`, `/terms`, `/privacy`)을 표준 XML 스키마로 등록한 `site/sitemap.xml`을 생성했습니다.

@@ -1,5 +1,6 @@
 # 로드맵 (Roadmap)
 
+- [x] 2026-10-12 화면 분석 모델 4bit 양자화(`Qwen3-VL-4B-Instruct-4bit`) 채택에 맞춰 랜딩페이지(`index.html`) 및 요구사항(`requirements.html`) 저장공간 표기 정정 (화면 분석 모델 약 8.9 GB ➔ 약 2.9 GB, 총 모델 용량 약 3.5 GB로 최신 카탈로그 동기화 완료).
 - [x] 2026-10-09 SEO 필수 파일(`robots.txt`, `sitemap.xml`) 신설 및 7개 하위 페이지 canonical 클린 URL 정합성 통일. Worker `xml` 라우팅 프록시 연계 완료.
 - [x] 2026-10-09 미사용 레거시 CSS(`styles.css` 41KB, `tokens.css` 1.9KB) 삭제로 배포 번들 최적화.
 - [x] 2026-10-09 Git `main` 브랜치 병합(`feat/real-app-screenshots` Fast-forward) 및 `origin/main` 동기화.
