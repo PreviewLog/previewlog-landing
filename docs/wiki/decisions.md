@@ -6,6 +6,7 @@
   - `site/index.html` (L276): 화면 분석 모델 저장공간 표기를 `약 8.9 GB`에서 `약 2.9 GB`로 정정했습니다.
   - `site/requirements.html` (L71-73): 화면 분석 모델 저장공간 표기를 `약 8.9 GB`에서 `약 2.9 GB`로 정정했습니다.
   - 음성 전사 모델(약 575 MB) 및 앱 번들(약 0.5 GB)을 포함하여 총 모델 다운로드 용량이 약 3.5 GB 수준(총 설치 약 3.9 GB 내외)으로 감소한 최신 카탈로그 실측을 일치시켰습니다.
+- **배포 및 검증**: GitHub `main`에 커밋·푸시(`826e5ec`) 후 Cloudflare Pages에 프로덕션 배포(`https://ffc6f4ee.previewlog-landing.pages.dev`)를 완료했습니다. 운영 도메인(`https://previewlog.bldnex.com`, `https://previewlog.bldnex.com/requirements`)에서 HTTP 200 및 변경된 2.9 GB 표기가 즉시 정상 서비스됨을 확인했습니다.
 - **메모리 표기 유지**: 4bit 도입으로 작업 세트가 약 3.8 GiB 수준으로 낮아졌으나, 제품 기획 내부 기준에 따라 8 GB 실기기 압박 테스트 전까지는 기존 권장 사양인 `최소 8 GB · 16 GB 권장` 표기를 유지합니다.
 
 ## 2026-10-09 — SEO 필수 파일(robots.txt, sitemap.xml) 신설 및 클린 canonical URL 통일
