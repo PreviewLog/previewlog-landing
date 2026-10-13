@@ -4,6 +4,7 @@
 - **배경**: 공식 고객지원 전화번호(`010-5605-0939`)가 확인되었습니다.
 - **반영 범위**:
   - `site/terms.html`, `site/privacy.html`, `site/refund.html`, `site/refund-policy.html`의 사업자 표시 정보에서 기존 "전화번호는 확인 후 추가로 공개(게시)합니다" 문구를 `전화번호: 010-5605-0939`(`tel:` 링크 포함)로 갱신했습니다.
+- **배포 및 검증**: GitHub `main`에 커밋·푸시(`a340e72`) 후 Cloudflare Pages에 프로덕션 배포(`https://97052714.previewlog-landing.pages.dev`)를 완료했습니다. 운영 도메인(`https://previewlog.bldnex.com/terms`, `/privacy`, `/refund`)에서 HTTP 200 및 변경된 전화번호 정상 서빙을 확인했습니다.
 
 ## 2026-10-13 — 통신판매업 신고번호 반영
 - **배경**: 공식 통신판매업 신고번호(`2026-경기여주-00296`)가 확인되었습니다.
