@@ -8,6 +8,7 @@
   - `site/assets/screenshots/read-only-share.png`: 읽기 전용 공유본 교체 (846x946)
   - `site/assets/screenshots/edit-reference.png`: 편집 참고 목록 교체 (851x948)
   - `site/index.html`: 변경된 이미지 크기에 맞춰 `img` 태그의 `width` / `height` 속성을 갱신하여 레이아웃 시프트(CLS)를 방지했습니다.
+- **배포 및 검증**: GitHub `main`에 커밋·푸시(`5f9a908`) 후 Cloudflare Pages 프로덕션 배포(`https://14092526.previewlog-landing.pages.dev`)를 완료했습니다. 운영 도메인(`https://previewlog.bldnex.com`)에서 HTTP 200 및 이미지 4종 정상 서빙을 확인했습니다.
 
 ## 2026-10-13 — 사업자등록번호와 고객지원 전화번호 공개 정보 정합성 보완
 - **배경**: 공개 법적 페이지에 고객지원 전화번호(`010-5605-0939`)와 통신판매업 신고번호는 반영되어 있었지만, 사업자등록번호(`374-02-03692`)가 빠져 있었습니다.
