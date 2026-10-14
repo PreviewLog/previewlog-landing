@@ -1,5 +1,14 @@
 # 결정 기록 (Decisions)
 
+## 2026-10-14 — v0.1.13 최신 실행 화면 및 출력물 스크린샷 4종 교체
+- **배경**: 데스크톱 앱 최신 v0.1.13 빌드 기준의 실제 실행 화면 및 출력물 스크린샷이 제공되었습니다.
+- **반영 범위**:
+  - `site/assets/screenshots/cut-summary.png`: 컷 요약 화면 교체 (1404x1009)
+  - `site/assets/screenshots/dialogue-review.png`: 대사 검토 화면 교체 (1404x1006)
+  - `site/assets/screenshots/read-only-share.png`: 읽기 전용 공유본 교체 (846x946)
+  - `site/assets/screenshots/edit-reference.png`: 편집 참고 목록 교체 (851x948)
+  - `site/index.html`: 변경된 이미지 크기에 맞춰 `img` 태그의 `width` / `height` 속성을 갱신하여 레이아웃 시프트(CLS)를 방지했습니다.
+
 ## 2026-10-13 — 사업자등록번호와 고객지원 전화번호 공개 정보 정합성 보완
 - **배경**: 공개 법적 페이지에 고객지원 전화번호(`010-5605-0939`)와 통신판매업 신고번호는 반영되어 있었지만, 사업자등록번호(`374-02-03692`)가 빠져 있었습니다.
 - **반영 범위**: `site/terms.html`, `site/privacy.html`, `site/refund.html`, `site/refund-policy.html`의 사업자 표시 정보에 사업자등록번호를 추가했습니다. 고객지원 전화번호는 `010-5605-0939`로 유지했습니다.
