@@ -1,5 +1,14 @@
 # 결정 기록 (Decisions)
 
+## 2026-10-15 — 심볼 마크 전용 파비콘 적용 (영문 표기 워드마크 제외)
+- **배경**: 기존 파비콘으로 가로형 전체 로고(`previewlog-logo-light.png`, 2172×724)가 지정되어 있어 브라우저 탭에서 영문 텍스트가 축소·압축되어 시인성이 떨어지는 문제가 있었습니다. 이에 사용자 요청에 따라 영문 워드마크("PreviewLog")를 제외한 왼쪽 심볼 마크만을 파비콘으로 적용하도록 정돈했습니다.
+- **반영 범위**:
+  - `site/assets/brand/logos/previewlog-symbol.png`: 원본 심볼 마크(재생 큐+타임라인+코랄 플레이헤드)를 투명 배경 512×512 정사각형 캔버스 중앙에 배치한 고해상도 파비콘 에셋 생성.
+  - `site/favicon.ico` 및 `site/favicon.png`: 브라우저 기본 요청 호환을 위한 멀티사이즈(16/32/48) ICO 및 루트 PNG 생성.
+  - 전체 8개 HTML 페이지의 `<link rel="icon">` 경로를 `./assets/brand/logos/previewlog-symbol.png`로 갱신.
+  - 제품 라이선스 서버 템플릿 연계: `server/src/legal/homepage.ts`, `checkout.ts`, `terms.ts`, `privacy.ts`, `refund_policy.ts`에 `https://previewlog.bldnex.com/assets/brand/logos/previewlog-symbol.png` 파비콘 태그 적용.
+  - 관리자 페이지 연계: `server/admin/index.html`에 파비콘 태그 적용 및 `favicon.png`, `favicon.ico` 에셋 동기화.
+
 ## 2026-10-14 — v0.1.13 최신 실행 화면 및 출력물 스크린샷 4종 교체
 - **배경**: 데스크톱 앱 최신 v0.1.13 빌드 기준의 실제 실행 화면 및 출력물 스크린샷이 제공되었습니다.
 - **반영 범위**:
