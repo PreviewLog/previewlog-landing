@@ -8,6 +8,9 @@
   - 전체 8개 HTML 페이지의 `<link rel="icon">` 경로를 `./assets/brand/logos/previewlog-symbol.png`로 갱신.
   - 제품 라이선스 서버 템플릿 연계: `server/src/legal/homepage.ts`, `checkout.ts`, `terms.ts`, `privacy.ts`, `refund_policy.ts`에 `https://previewlog.bldnex.com/assets/brand/logos/previewlog-symbol.png` 파비콘 태그 적용.
   - 관리자 페이지 연계: `server/admin/index.html`에 파비콘 태그 적용 및 `favicon.png`, `favicon.ico` 에셋 동기화.
+- **파비콘 시인성 극대화 (여백 완전 제거)**:
+  - 브라우저 탭 바에서 타 사이트 대비 작아 보이는 현상을 해결하기 위해, 기존 캔버스 좌우 28px 패딩을 0px로 완전히 제거하고 심볼의 가로 폭을 512px(100%) 끝까지 꽉 채워 이전 대비 약 +26% 볼륨을 확장했습니다.
+  - ICO 에셋(16x16, 32x32, 48x48) 역시 가로를 100% 꽉 채우도록 재생성하여 브라우저 탭에서의 선명도와 가독성을 개선했습니다.
 
 ## 2026-10-14 — v0.1.13 최신 실행 화면 및 출력물 스크린샷 4종 교체
 - **배경**: 데스크톱 앱 최신 v0.1.13 빌드 기준의 실제 실행 화면 및 출력물 스크린샷이 제공되었습니다.
