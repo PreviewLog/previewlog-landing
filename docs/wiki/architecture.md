@@ -15,7 +15,7 @@ previewlog-landing/
 │   └── roadmap.md
 ├── site/                      # 공개 정적 웹 사이트 배포 루트
 │   ├── index.html             # 메인 랜딩페이지
-│   ├── landing.css            # 메인 및 개편 하위 페이지 공통 다크·반응형 스타일
+│   ├── landing.css            # 메인 및 하위 페이지 공통 하이브리드 라이트·반응형 스타일
 │   ├── subpages.css           # 요구사항·설치·변경사항·정책 문서 레이아웃
 │   ├── landing.js             # 실제 실행 화면의 컷 요약·대사 검토 전환
 │   ├── main.js                # 네비게이션, FAQ, 대기자 폼 제출 처리

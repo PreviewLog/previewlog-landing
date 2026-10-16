@@ -281,17 +281,20 @@
 .notice-box {
   margin: 40px 0 28px;
   padding: 24px 28px;
-  background: #1d2c40;
-  border-left: 3px solid var(--blue);
-  border-radius: 4px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-left: 4px solid var(--blue);
+  border-radius: 6px;
 }
 .notice-box b {
   display: block;
   margin-bottom: 10px;
+  color: var(--text);
 }
 .notice-box p {
   margin: 0;
   font-size: 14px;
+  color: #334155;
 }
 .requirements-actions {
   display: flex;
